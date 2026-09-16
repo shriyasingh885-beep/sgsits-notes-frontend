@@ -1,0 +1,276 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Postgres has native enums, but these fields stay plain strings — this
+// schema originally targeted SQLite (no enum support) and switching now
+// would mean a real migration for no functional benefit.
+// Role: STUDENT | ADMIN
+// ResourceType: NOTES | HANDWRITTEN_NOTES | PYQ | QUESTION_BANK | ASSIGNMENT | PRACTICAL
+//               | LAB_MANUAL | REFERENCE_MATERIAL | IMPORTANT_QUESTIONS | CHEAT_SHEET | SYLLABUS | SLIDES
+// ResourceStatus: PENDING | APPROVED | REJECTED
+// ReportStatus: OPEN | RESOLVED
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("STUDENT")
+  collegeId    String?
+  branchId     String?
+  semesterId   String?
+  createdAt    DateTime @default(now())
+
+  college   College?  @relation(fields: [collegeId], references: [id])
+  branch    Branch?   @relation(fields: [branchId], references: [id])
+  semester  Semester? @relation(fields: [semesterId], references: [id])
+
+  resources   Resource[]
+  bookmarks   Bookmark[]
+  ratings     Rating[]
+  reports     Report[]
+  studyEvents StudyEvent[]
+}
+
+model College {
+  id   String @id @default(cuid())
+  name String
+  slug String @unique
+  city String
+
+  branches  Branch[]
+  semesters Semester[]
+  users     User[]
+}
+
+// Branch only applies from Year 2 onward. First-year curriculum is common
+// to every branch, so first-year Semesters attach directly to the College
+// with branchId = NULL instead of going through a Branch.
+model Branch {
+  id        String  @id @default(cuid())
+  name      String
+  slug      String
+  collegeId String
+  college   College @relation(fields: [collegeId], references: [id])
+
+  semesters Semester[]
+  users     User[]
+
+  @@unique([collegeId, slug])
+}
+
+model Semester {
+  id        String  @id @default(cuid())
+  collegeId String
+  college   College @relation(fields: [collegeId], references: [id])
+  branchId  String?
+  branch    Branch? @relation(fields: [branchId], references: [id])
+
+  year   Int // 1 = First Year, 2 = Second Year, 3 = Third Year, 4 = Fourth Year
+  number Int // 1 or 2 — the semester within that year
+
+  subjects Subject[]
+  users    User[]
+
+  @@index([collegeId, year, number])
+}
+
+model Subject {
+  id         String   @id @default(cuid())
+  name       String
+  code       String
+  credits    String? // e.g. "L2·T1·P0 | 3 Credits", straight from the official syllabus
+  semesterId String
+  semester   Semester @relation(fields: [semesterId], references: [id])
+
+  units     Unit[]
+  resources Resource[]
+  studyEvents StudyEvent[]
+
+  @@unique([semesterId, code])
+}
+
+model Unit {
+  id        String  @id @default(cuid())
+  number    Int
+  title     String
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id])
+
+  topics    Topic[]
+  resources Resource[]
+
+  @@unique([subjectId, number])
+}
+
+// Optional topic level within a unit. Not every unit needs topics — when a
+// subject's syllabus doesn't break down cleanly, resources can attach
+// directly to the Unit instead (topicId left null).
+model Topic {
+  id     String @id @default(cuid())
+  name   String
+  unitId String
+  unit   Unit   @relation(fields: [unitId], references: [id])
+
+  resources Resource[]
+
+  @@unique([unitId, name])
+}
+
+model Resource {
+  id          String @id @default(cuid())
+  title       String
+  description String
+  fileUrl     String
+  fileType    String
+  fileSize    Int
+  tags        String
+  type        String
+  status      String @default("PENDING")
+  views       Int    @default(0)
+  downloads   Int    @default(0)
+
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  unitId    String?
+  unit      Unit?   @relation(fields: [unitId], references: [id])
+  topicId   String?
+  topic     Topic?  @relation(fields: [topicId], references: [id])
+
+  uploadedById String
+  uploadedBy   User   @relation(fields: [uploadedById], references: [id])
+
+  bookmarks Bookmark[]
+  ratings   Rating[]
+  reports   Report[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // ── Document-intelligence taxonomy (classification overhaul) ──────────────
+  // All nullable / defaulted so this is a non-destructive addition. `type` is
+  // kept as-is during migration; `documentType` (a canonical id from
+  // src/lib/taxonomy.ts) supersedes it once VERIFIED.
+  originalFilename String? // basename before any rename, for rollback
+  suggestedTitle   String? // human-readable title proposed by the classifier
+  fileHash         String? // sha256 of file bytes — duplicate detection
+  pageCount        Int?
+  contentText      String? // extracted + OCR text, lower-cased — powers search
+
+  academicArea String? // canonical id: mathematics | physics | chemistry | ...
+  documentType String? // canonical id: previous_year_question_paper | class_notes | ...
+  examType     String? // MST1 | MST2 | END_SEM | SUPPLEMENTARY | UNKNOWN
+  examSession  String? // free text, e.g. "Apr 2025"
+  academicYear Int?
+  courseCode   String?
+  branch       String?
+  topicsJson   String? // JSON string[] — SQLite has no array columns
+  tagsJson     String? // JSON string[] — structured replacement for `tags`
+
+  // Workflow: UNCLASSIFIED -> AUTO_CLASSIFIED | REVIEW_REQUIRED -> VERIFIED
+  classificationStatus     String  @default("UNCLASSIFIED")
+  classificationConfidence Float?
+  classificationReason     String?
+  needsReview              Boolean @default(false)
+  possibleDuplicate        Boolean @default(false)
+  duplicateOfId            String?
+
+  classificationLogs ClassificationLog[]
+
+  @@index([subjectId])
+  @@index([status])
+  @@index([documentType])
+  @@index([classificationStatus])
+  @@index([fileHash])
+}
+
+// Append-only audit trail for every automated or human classification change.
+// Each row carries JSON before/after snapshots so the whole migration is
+// reversible by replaying logs in reverse.
+model ClassificationLog {
+  id         String   @id @default(cuid())
+  resourceId String
+  resource   Resource @relation(fields: [resourceId], references: [id])
+  action     String // BACKFILL | AUTO_CLASSIFY | REVIEW_APPROVE | REVIEW_EDIT | RENAME | ROLLBACK
+  actor      String   @default("system") // "system" or a user id / email
+  before     String? // JSON snapshot of the affected fields
+  after      String? // JSON snapshot of the affected fields
+  confidence Float?
+  reason     String?
+  createdAt  DateTime @default(now())
+
+  @@index([resourceId])
+  @@index([action])
+}
+
+model Bookmark {
+  id         String   @id @default(cuid())
+  userId     String
+  resourceId String
+  collection String   @default("Saved")
+  createdAt  DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id])
+  resource Resource @relation(fields: [resourceId], references: [id])
+
+  @@unique([userId, resourceId])
+}
+
+model Rating {
+  id         String   @id @default(cuid())
+  userId     String
+  resourceId String
+  stars      Int
+  review     String?
+  createdAt  DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id])
+  resource Resource @relation(fields: [resourceId], references: [id])
+
+  @@unique([userId, resourceId])
+}
+
+model Report {
+  id         String   @id @default(cuid())
+  resourceId String
+  userId     String
+  reason     String
+  details    String?
+  status     String   @default("OPEN")
+  createdAt  DateTime @default(now())
+
+  resource Resource @relation(fields: [resourceId], references: [id])
+  user     User     @relation(fields: [userId], references: [id])
+}
+
+// SQLite has no native enums; kind is EXAM | ASSIGNMENT | REMINDER
+model StudyEvent {
+  id        String   @id @default(cuid())
+  title     String
+  date      DateTime
+  kind      String   // EXAM | ASSIGNMENT | REMINDER
+  subjectId String?
+  subject   Subject? @relation(fields: [subjectId], references: [id])
+  userId    String?  // null = visible to everyone (college-wide)
+  user      User?    @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+
+  @@index([date])
+}
+
+// Genuine, lightweight presence tracking — a real count of distinct browser
+// sessions with a heartbeat in the last few minutes, not a fabricated number.
+// sessionId is a random id the client generates once and keeps in
+// localStorage; no account, no personal data.
+model Presence {
+  sessionId String   @id
+  lastSeen  DateTime @default(now())
+
+  @@index([lastSeen])
+}

@@ -1,0 +1,45 @@
+chemistry/corrosion-science-notes.pdf  size=501513  type=PDF document, version 1.5, 9 page(s)
+chemistry/aas-gta-reading-material.pdf  size=376097  type=PDF document, version 1.3, 11 page(s)
+chemistry/aas.pdf  size=28809  type=PDF document, version 1.2, 3 page(s)
+chemistry/atomic-absorption-spectroscopy-notes.pdf  size=675377  type=PDF document, version 1.5, 5 page(s)
+chemistry/chemistry-previous-years.pdf  size=0  type=cannot open `public/uploads/chemistry/ch
+chemistry/chemistry-lab-manual-be-1st-year.pdf  size=892676  type=PDF document, version 1.7 (zip deflate e
+chemistry/chemistry-notes.pdf  size=38661916  type=PDF document, version 1.4
+chemistry/chemistry-practical-1.pdf  size=8039265  type=PDF document, version 1.3, 23 page(s)
+chemistry/chemistry-practical-2.pdf  size=9868734  type=PDF document, version 1.3, 23 page(s)
+chemistry/chemistry-practical-3.pdf  size=11470182  type=PDF document, version 1.3, 22 page(s)
+chemistry/chromatography-notes.pdf  size=549913  type=PDF document, version 1.5, 3 page(s)
+chemistry/corrosion-1.pdf  size=35302763  type=PDF document, version 1.4, 10 page(s)
+chemistry/corrosion-2.pdf  size=32003524  type=PDF document, version 1.4, 10 page(s)
+chemistry/corrosion-4-rotated.pdf  size=37499486  type=PDF document, version 1.4, 10 page(s)
+chemistry/corrosion-5-rotated.pdf  size=44003140  type=PDF document, version 1.4, 10 page(s)
+chemistry/ethics-for-corrosion-control.docx  size=14413  type=Microsoft Word 2007+
+mechanical-workshop/carpentry-shop.pdf  size=3893339  type=PDF document, version 1.3, 13 page(s)
+mechanical-workshop/chapter-3-casting.pptx  size=2021347  type=Microsoft PowerPoint 2007+
+mechanical-workshop/cutting-fluids.pptx  size=9650615  type=Microsoft PowerPoint 2007+
+mechanical-workshop/fitting-1.pdf  size=2933855  type=PDF document, version 1.3, 10 page(s)
+mechanical-workshop/fitting-shop.pdf  size=1921801  type=PDF document, version 1.3, 9 page(s)
+programming/arrays-and-strings.pdf  size=1040121  type=PDF document, version 1.4, 8 page(s)
+programming/chapter-2-instructions-and-operators.pdf  size=1932940  type=PDF document, version 1.7, 5 page(s)
+programming/chapter-3-conditional-instructions.pdf  size=2200360  type=PDF document, version 1.7, 6 page(s)
+programming/co10504-lab-assignment-3.pdf  size=61804  type=PDF document, version 1.4, 2 page(s)
+programming/co10504-lab-assignment-4.pdf  size=58080  type=PDF document, version 1.4, 1 page(s)
+programming/co10504-lab-assignment-5.pdf  size=55624  type=PDF document, version 1.4, 1 page(s)
+electronics/ec-unit-1.pdf  size=2230116  type=PDF document, version 1.5, 36 page(s)
+languages/ab-15096-eng-labmanual.pdf  size=3240055  type=PDF document, version 1.7, 22 page(s)
+languages/eng-lab-manual.pdf  size=3818578  type=PDF document, version 1.4, 22 page(s)
+languages/english-lab-manual-google-docs.pdf  size=851857  type=PDF document, version 1.5 (zip deflate e
+languages/english-practical.pdf  size=7204158  type=PDF document, version 1.3, 22 page(s)
+civil/ce-assignment-1.pdf  size=4311584  type=PDF document, version 1.7, 13 page(s)
+mathematics/all-pyq-last-year-compilation.pdf  size=32398990  type=PDF document, version 1.4, 105 page(s)
+general/scan-2.pdf  size=131025  type=PDF document, version 1.7, 4 page(s)
+general/scan-3.pdf  size=117148  type=PDF document, version 1.7, 7 page(s)
+general/scan-4.pdf  size=81845  type=PDF document, version 1.7, 7 page(s)
+general/scan-5.pdf  size=243248  type=PDF document, version 1.7, 6 page(s)
+general/scan-5-alt.pdf  size=3432303  type=PDF document, version 1.3, 8 page(s)
+general/adobe-scan-2022.pdf  size=120348  type=PDF document, version 1.3, 1 page(s)
+general/camscanner-1905084940.pdf  size=1476136  type=PDF document, version 1.4, 2 page(s)
+general/camscanner-2405132557.pdf  size=808402  type=PDF document, version 1.4, 1 page(s)
+general/camscanner-2405132920.pdf  size=2953461  type=PDF document, version 1.4, 2 page(s)
+general/camscanner-2705070337.pdf  size=21662947  type=PDF document, version 1.4
+general/divyanshu-ab-19063.pdf  size=1128246  type=PDF document, version 1.7, 37 page(s)

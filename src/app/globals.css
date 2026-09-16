@@ -1,0 +1,556 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Design tokens — MINT EUCALYPTUS. The single source of truth for the whole
+   UI: warm ivory/mint background, off-white surfaces, eucalyptus-green
+   primary, deep-green text, soft sage borders, restrained cream accent.
+   tailwind.config.ts maps these to utilities — bg-surface, text-muted,
+   rounded-md, shadow-md, bg-primary, ... — new work should reach for the
+   canonical names (primary / primary-soft / primary-strong / surface-soft /
+   text / text-muted / text-faint / border-soft) documented there. Pages must
+   never hardcode a hex value.
+   --------------------------------------------------------------------------- */
+:root {
+  --background: #f1faf4;
+  --surface: #fafcf9;
+  --surface-soft: #f6faf5;
+  --surface-elevated: #ffffff;
+
+  /* eucalyptus ramp — 500 is the flagship "eucalyptus" primary, 800 the
+     "deep green" strong variant used for active/emphasis states */
+  --sage-50: #f1faf4;
+  --sage-100: #e3f1e7;
+  --sage-200: #d7ead9;
+  --sage-300: #bbdcc1;
+  --sage-400: #8fc29b;
+  --sage-500: #5e8f70;
+  --sage-600: #4c7a5e;
+  --sage-700: #3b6350;
+  --sage-800: #315a45;
+
+  --text-primary: #1f2924;
+  --text-secondary: #3e4a43;
+  --text-muted: #68776f;
+  --text-faint: #93a199;
+
+  --border: #dce7de;
+  --border-light: #e9f1ea;
+
+  --success: #5e8f70;
+  --warning: #b08a4e;
+  --danger: #b4695b;
+
+  --white: #ffffff;
+
+  /* Accent cream/gold — restrained, used sparingly for highlights. */
+  --accent-cream: #f2ebd9;
+  --accent-cream-ink: #8a7550;
+
+  /* Desaturated subject tints — kept deliberately quiet, tuned to the same
+     warm-mint family so no page ever feels like a different palette. */
+  --tint-lavender: #ece7f2;
+  --tint-lavender-ink: #6b5f86;
+  --tint-sage: #e3f1e7;
+  --tint-sage-ink: #3b6350;
+
+  /* Hover fill for rows and menu items whose text is the neutral ink/muted
+     scale (note tables, the user menu, dropdowns, the command palette). Kept
+     as its own token because --tint-sage / --sage-50 are paired with dark
+     green ink elsewhere and must stay light even in dark mode. */
+  --row-hover: #e3f1e7;
+  --tint-terracotta: #f3e7de;
+  --tint-terracotta-ink: #8f5e45;
+  --tint-ochre: #f2ebd9;
+  --tint-ochre-ink: #8a7550;
+  --tint-slate: #e6ebe6;
+  --tint-slate-ink: #51625a;
+
+  --shadow-sm: 0 1px 2px rgba(31, 41, 36, 0.04), 0 2px 7px rgba(31, 41, 36, 0.035);
+  --shadow-md: 0 2px 5px rgba(31, 41, 36, 0.05), 0 14px 30px rgba(31, 41, 36, 0.07);
+  --shadow-lg: 0 8px 18px rgba(31, 41, 36, 0.08), 0 28px 56px rgba(31, 41, 36, 0.13);
+  /* legacy aliases some components still reference directly */
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+  --shadow-pop: var(--shadow-lg);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+
+  --focus-ring: 0 0 0 3px rgba(94, 143, 112, 0.18);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Dark mode — a real, working toggle (Settings > Appearance, or the header
+   control), not a decoration. Deliberately remaps only the neutral surface /
+   text / border scale; the eucalyptus/sage ramp and tint pairs stay as-is so
+   every button, badge and accent keeps its already-correct contrast. */
+:root[data-theme="dark"] {
+  --background: #0f1d17;
+  --surface: #15251d;
+  --surface-soft: #192c22;
+  --surface-elevated: #1d3226;
+
+  --text-primary: #eaf3ec;
+  --text-secondary: #b7c7bd;
+  --text-muted: #87a092;
+  --text-faint: #5f7b6c;
+
+  --border: #24392e;
+  --border-light: #1e3226;
+
+  /* a quiet lift above --surface, not the light mint the light theme uses */
+  --row-hover: #21382c;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.4), 0 16px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.45), 0 30px 60px rgba(0, 0, 0, 0.5);
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+  --shadow-pop: var(--shadow-lg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Icon-only controls and links get a sage ring, never the browser blue. */
+:focus-visible {
+  outline: 2px solid var(--sage-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--sage-400);
+  box-shadow: var(--focus-ring);
+}
+
+/* The note document surface — paper, not a dark canvas (§24). */
+.paper {
+  background: var(--surface-elevated);
+}
+
+.reader-prose {
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 720px;
+}
+
+/* Quiet scrollbars so the sidebar and contents rail stay calm. */
+.thin-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.thin-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.thin-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in {
+  animation: fade-in 200ms var(--ease) both;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Loading placeholders (§50) — a skeleton of the real layout, never a spinner. */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--border-light);
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 253, 248, 0.6), transparent);
+  animation: shimmer 1.4s var(--ease) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Manual override for Settings > Appearance > Reduced motion — same effect as
+   the OS-level media query above, for people who want it off without
+   changing a system setting. */
+html.force-reduced-motion *,
+html.force-reduced-motion *::before,
+html.force-reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Reading mode (PdfReader) — a dedicated document workspace. A calm charcoal
+   canvas makes white pages the focus; chrome is dark translucent glass with
+   the site's sage accent kept. Scoped to `.reader`.
+   --------------------------------------------------------------------------- */
+.reader {
+  --reader-bg: #2c3033;
+  --reader-rail: #242729;
+  --reader-hairline: rgba(255, 255, 255, 0.12);
+  --reader-page-empty: rgba(255, 255, 255, 0.05);
+  --reader-chrome: rgba(26, 28, 30, 0.82);
+  --reader-chrome-hover: rgba(255, 255, 255, 0.12);
+  --reader-chrome-ink: #f3f4f6;
+  --reader-chrome-dim: #9aa0a6;
+  --reader-input: rgba(255, 255, 255, 0.1);
+  --reader-accent: #6ea183; /* eucalyptus, brightened for a dark canvas */
+}
+
+.reader .reader-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+.reader .reader-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.reader .reader-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* pdf.js text layer sits over the canvas for selection — keep it invisible
+   but selectable, and let rotation ride on the canvas transform. */
+.reader .reader-page {
+  transition: transform 0.18s var(--ease);
+}
+.reader .react-pdf__Page__textContent {
+  mix-blend-mode: normal;
+}
+
+/* pptx-preview ships its own prev/next circles baked into the slide DOM —
+   PptxReader drives navigation itself via the floating pill, so hide the
+   library's built-in controls to avoid two competing nav UIs. */
+.reader .pptx-preview-wrapper-next,
+.reader .pptx-preview-wrapper-prev,
+.reader .pptx-preview-wrapper-pagination {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Site-wide gesture navigation (right-click / arrows / swipe) — small,
+   restrained motion cues. prefers-reduced-motion is already handled by the
+   global `*` rule above, which zeroes every animation/transition duration.
+   --------------------------------------------------------------------------- */
+@keyframes nav-feedback-pop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+.nav-feedback-pop {
+  animation: nav-feedback-pop 220ms var(--ease) both;
+}
+
+@keyframes nav-try-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(127, 154, 109, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(127, 154, 109, 0);
+  }
+}
+.nav-try-pulse {
+  animation: nav-try-pulse 1.8s ease-in-out 2;
+}
+
+@keyframes nav-glyph-arrow {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+}
+.nav-glyph-arrow {
+  animation: nav-glyph-arrow 1.4s ease-in-out infinite;
+}
+
+@keyframes nav-glyph-swipe {
+  0%,
+  100% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+}
+.nav-glyph-swipe {
+  animation: nav-glyph-swipe 1.6s ease-in-out infinite;
+}
+
+/* ---------------------------------------------------------------------------
+   Homepage landing hero — Mint Eucalyptus identity: warm ivory canvas,
+   eucalyptus-green headline, restrained cream/gold accent. Scoped to `.home`.
+   --------------------------------------------------------------------------- */
+.home {
+  --h-bg: var(--surface-soft);
+  --h-card: var(--surface);
+  --h-ink: var(--text-primary);
+  --h-soft: var(--text-muted);
+  --h-faint: var(--text-faint);
+  --h-border: var(--border);
+  --h-primary: var(--sage-500);
+  --h-primary-pale: var(--tint-sage);
+  --h-primary-glow: rgba(94, 143, 112, 0.14);
+  --h-accent: var(--accent-cream-ink);
+  --h-accent-pale: var(--accent-cream);
+  --h-accent-glow: rgba(138, 117, 80, 0.12);
+  --h-shadow: var(--shadow-sm);
+  --h-shadow-lg: var(--shadow-lg);
+  color: var(--h-ink);
+}
+
+/* Full-bleed canvas behind the landing, without disturbing the shell. Fixed
+   so it covers the viewport at any scroll position; sits behind all content
+   (the sidebar paints its own surface on top). */
+.home::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--h-bg);
+  pointer-events: none;
+}
+
+/* Faint botanical decoration behind the hero — a few overlapping eucalyptus-
+   leaf blobs, never sharp enough to compete with the copy. */
+.home-botanical {
+  position: absolute;
+  inset: -10% -6% auto -6%;
+  height: 130%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+}
+.home-botanical svg {
+  width: 100%;
+  height: 100%;
+}
+
+.home-display {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.home-hero-wrap {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.home-hero-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(30, 64, 175, 0.08), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(180, 83, 9, 0.06), transparent 60%);
+}
+
+.home-hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 16px 56px;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+  color: var(--h-ink);
+}
+
+.home-hero p {
+  color: var(--h-soft);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  margin-bottom: 32px;
+}
+
+.home-grad {
+  background: linear-gradient(45deg, var(--h-primary), var(--h-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-search {
+  width: 100%;
+  padding: 16px 18px 16px 48px;
+  border-radius: 14px;
+  border: 1px solid var(--h-border);
+  background: var(--h-card);
+  color: var(--h-ink);
+  font-size: 0.95rem;
+  box-shadow: var(--h-shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.home-search::placeholder {
+  color: var(--h-faint);
+}
+
+.home-search:focus {
+  outline: none;
+  border-color: var(--h-primary);
+  box-shadow: 0 0 0 4px var(--h-primary-glow), var(--h-shadow);
+}
+
+.home-badge {
+  font-size: 0.68rem;
+  padding: 4px 10px;
+  border-radius: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.home-badge-blue {
+  background: var(--h-primary-pale);
+  color: var(--h-primary);
+}
+
+.home-badge-gold {
+  background: var(--h-accent-pale);
+  color: var(--h-accent);
+}
+
+.home-badge-soft {
+  background: var(--h-bg);
+  color: var(--h-soft);
+  border: 1px solid var(--h-border);
+}
+
+.home-card {
+  background: var(--h-card);
+  border: 1px solid var(--h-border);
+  border-radius: 18px;
+  box-shadow: var(--h-shadow);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s, border-color 0.25s;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--h-shadow-lg);
+  border-color: var(--h-primary);
+}
+
+.home-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--h-ink);
+}
+
+.home-foot {
+  border-top: 1px solid var(--h-border);
+  color: var(--h-soft);
+}
+
+.home-foot a {
+  color: var(--h-soft);
+  transition: color 0.15s;
+}
+
+.home-foot a:hover {
+  color: var(--h-primary);
+}
+
+/* ---------------------------------------------------------------------------
+   Handwritten accent — /about only. Deliberately not a design token: it is an
+   annotation voice, never body copy or a heading.
+   --------------------------------------------------------------------------- */
+.font-hand {
+  font-family: var(--font-hand), "Segoe Script", "Bradley Hand", cursive;
+  letter-spacing: 0.01em;
+}
+
+/* Gentle floating motion for /about's decorative doodle elements — a slow,
+   small drift, never a bounce. Disabled entirely under reduced motion. */
+@keyframes doodle-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-2deg);
+  }
+}
+
+.animate-doodle-float {
+  animation: doodle-float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-doodle-float {
+    animation: none;
+  }
+}

@@ -1,0 +1,989 @@
+[
+  {
+    "id": "cmts6andn004n10fn3fzamnqk",
+    "path": "languages/understanding-bharat-reference-material.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/understanding-bharat-reference-material.pdf",
+    "title": "Understanding Bharat — Reference Material",
+    "rPath": "languages/understanding-bharat-reference-material.pdf"
+  },
+  {
+    "id": "cmtrrra090041s0lle5gypvip",
+    "path": "physics/quantum-theory-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/quantum-theory-notes-additional-set.pdf",
+    "title": "Quantum Theory — Notes",
+    "rPath": "physics/quantum-theory-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts64c9l000510fn69jqeygt",
+    "path": "math/mathematics-assignment-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-assignment-1.pdf",
+    "title": "Mathematics — Assignment 1",
+    "rPath": "math/mathematics-assignment-1.pdf"
+  },
+  {
+    "id": "cmts64rkv000r10fn1pch1zke",
+    "path": "biology/biology-lecture-1-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/biology-lecture-1-notes.pdf",
+    "title": "Biology — Lecture 1 Notes",
+    "rPath": "biology/biology-lecture-1-notes.pdf"
+  },
+  {
+    "id": "cmts6b4pz005910fnd65oczlw",
+    "path": "mechanical/welding-shop-workshop-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/welding-shop-workshop-notes-additional-set.pdf",
+    "title": "Welding Shop — Workshop Notes",
+    "rPath": "mechanical/welding-shop-workshop-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts6679r001j10fnitszjavv",
+    "path": "electronics/unit-2-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-2-notes-additional-set.pdf",
+    "title": "Unit 2 — Notes",
+    "rPath": "electronics/unit-2-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts66z7c002510fn16gdke4h",
+    "path": "civil/introduction-to-civil-engineering-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/civil/introduction-to-civil-engineering-notes-additional-set.pdf",
+    "title": "Introduction to Civil Engineering — Notes",
+    "rPath": "civil/introduction-to-civil-engineering-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts68v2z003910fnfkv90a32",
+    "path": "mechanical/unit-3-fluid-kinematics-class-slides-additional-set.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/unit-3-fluid-kinematics-class-slides-additional-set.pptx",
+    "title": "Unit 3 — Fluid Kinematics — Class Slides",
+    "rPath": "mechanical/unit-3-fluid-kinematics-class-slides-additional-set.pptx"
+  },
+  {
+    "id": "cmts69irk003t10fnd2fv763m",
+    "path": "electronics/practice-sheet-1-additional-copy.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/practice-sheet-1-additional-copy.pdf",
+    "title": "Practice Sheet 1 (Additional Copy)",
+    "rPath": "electronics/practice-sheet-1-additional-copy.pdf"
+  },
+  {
+    "id": "cmtrrrbqx0043s0llzrg45pja",
+    "path": "physics/quantum-theory-class-slides-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/quantum-theory-class-slides-additional-set.pdf",
+    "title": "Quantum Theory — Class Slides",
+    "rPath": "physics/quantum-theory-class-slides-additional-set.pdf"
+  },
+  {
+    "id": "cmts6a2n2004h10fn34aicwcu",
+    "path": "biology/tissue-engineering-organ-systems-class-slides-set-2.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/tissue-engineering-organ-systems-class-slides-set-2.pptx",
+    "title": "Tissue Engineering & Organ Systems — Class Slides (Set 2)",
+    "rPath": "biology/tissue-engineering-organ-systems-class-slides-set-2.pptx"
+  },
+  {
+    "id": "cmts6a0jo004f10fnnq0nyadd",
+    "path": "biology/tissue-engineering-organ-systems-class-slides-set-1.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/tissue-engineering-organ-systems-class-slides-set-1.pptx",
+    "title": "Tissue Engineering & Organ Systems — Class Slides (Set 1)",
+    "rPath": "biology/tissue-engineering-organ-systems-class-slides-set-1.pptx"
+  },
+  {
+    "id": "cmts6a3in004j10fndrwxy8dg",
+    "path": "biology/tissue-engineering-organ-systems-class-slides-set-3.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/tissue-engineering-organ-systems-class-slides-set-3.pptx",
+    "title": "Tissue Engineering & Organ Systems — Class Slides (Set 3)",
+    "rPath": "biology/tissue-engineering-organ-systems-class-slides-set-3.pptx"
+  },
+  {
+    "id": "cmtrrp01h001xs0lllxkwzlm9",
+    "path": "math/double-integrals-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/double-integrals-notes.pdf",
+    "title": "Double Integrals — Notes",
+    "rPath": "math/double-integrals-notes.pdf"
+  },
+  {
+    "id": "cmts6490l000110fnbcp9yasg",
+    "path": "biology/genetics-molecular-biology-engineering-applications.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/genetics-molecular-biology-engineering-applications.pdf",
+    "title": "Genetics & Molecular Biology — Engineering Applications",
+    "rPath": "biology/genetics-molecular-biology-engineering-applications.pdf"
+  },
+  {
+    "id": "cmtrrpd25002bs0ll6gmpchj9",
+    "path": "math/matrices-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/matrices-notes-additional-set.pdf",
+    "title": "Matrices — Notes",
+    "rPath": "math/matrices-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrnuev000rs0llljy17y2a",
+    "path": "it/c-language-question-bank-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/c-language-question-bank-2.pdf",
+    "title": "C Language — Question Bank 2",
+    "rPath": "it/c-language-question-bank-2.pdf"
+  },
+  {
+    "id": "cmts64aty000310fn2kcwdsg3",
+    "path": "math/mathematics-for-data-science-assignment-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-for-data-science-assignment-2.pdf",
+    "title": "Mathematics for Data Science — Assignment 2",
+    "rPath": "math/mathematics-for-data-science-assignment-2.pdf"
+  },
+  {
+    "id": "cmts64wrr000t10fnvrc8pj30",
+    "path": "biology/bioinspired-design-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/bioinspired-design-class-slides.pptx",
+    "title": "Bioinspired Design — Class Slides",
+    "rPath": "biology/bioinspired-design-class-slides.pptx"
+  },
+  {
+    "id": "cmts658md000x10fn1c2vt167",
+    "path": "biology/biological-systems-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/biological-systems-notes.pdf",
+    "title": "Biological Systems — Notes",
+    "rPath": "biology/biological-systems-notes.pdf"
+  },
+  {
+    "id": "cmts64ka4000h10fnum3tb08d",
+    "path": "math/mathematics-for-data-science-assignment-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-for-data-science-assignment-1.pdf",
+    "title": "Mathematics for Data Science — Assignment 1",
+    "rPath": "math/mathematics-for-data-science-assignment-1.pdf"
+  },
+  {
+    "id": "cmts64e4s000710fnp409gv58",
+    "path": "electronics/unit-2-assignment-three-phase-circuits.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-2-assignment-three-phase-circuits.pdf",
+    "title": "Unit 2 Assignment (Three-Phase Circuits)",
+    "rPath": "electronics/unit-2-assignment-three-phase-circuits.pdf"
+  },
+  {
+    "id": "cmts64j16000f10fnufy3uk06",
+    "path": "electronics/unit-5-assignment.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-5-assignment.pdf",
+    "title": "Unit 5 Assignment",
+    "rPath": "electronics/unit-5-assignment.pdf"
+  },
+  {
+    "id": "cmts64f99000910fn9dlr9obc",
+    "path": "electronics/unit-4-assignment.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-4-assignment.pdf",
+    "title": "Unit 4 Assignment",
+    "rPath": "electronics/unit-4-assignment.pdf"
+  },
+  {
+    "id": "cmts64lrr000j10fnv55rpncp",
+    "path": "mechanical/overview-of-mechanical-engineering-assignment-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/overview-of-mechanical-engineering-assignment-1.pdf",
+    "title": "Overview of Mechanical Engineering — Assignment 1",
+    "rPath": "mechanical/overview-of-mechanical-engineering-assignment-1.pdf"
+  },
+  {
+    "id": "cmts65a3u000z10fnsnwli4v3",
+    "path": "biology/breathing-respiration-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/breathing-respiration-notes.pdf",
+    "title": "Breathing & Respiration — Notes",
+    "rPath": "biology/breathing-respiration-notes.pdf"
+  },
+  {
+    "id": "cmts6fs1m0003zivre45xlc6p",
+    "path": "electronics/fundamentals-of-electrical-engineering-test-1-march-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/fundamentals-of-electrical-engineering-test-1-march-2025.pdf",
+    "title": "Fundamentals of Electrical Engineering — Test 1 (March 2025)",
+    "rPath": "electronics/fundamentals-of-electrical-engineering-test-1-march-2025.pdf"
+  },
+  {
+    "id": "cmts69k1i003v10fn6o3ml7de",
+    "path": "languages/project-report-sample-document-additional-copy.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/project-report-sample-document-additional-copy.pdf",
+    "title": "Project Report — Sample Document (Additional Copy)",
+    "rPath": "languages/project-report-sample-document-additional-copy.pdf"
+  },
+  {
+    "id": "cmts65mgr001310fnflqhrdvp",
+    "path": "biology/cardiovascular-respiratory-system-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/cardiovascular-respiratory-system-class-slides.pptx",
+    "title": "Cardiovascular & Respiratory System — Class Slides",
+    "rPath": "biology/cardiovascular-respiratory-system-class-slides.pptx"
+  },
+  {
+    "id": "cmtrrp6ev0023s0lln1jrdr2i",
+    "path": "math/mathematics-end-semester-paper-april-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-end-semester-paper-april-2025.pdf",
+    "title": "Mathematics — End-Semester Paper (April 2025)",
+    "rPath": "math/mathematics-end-semester-paper-april-2025.pdf"
+  },
+  {
+    "id": "cmts64yw6000v10fnemzobclg",
+    "path": "biology/biology-for-engineering-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/biology-for-engineering-class-slides.pptx",
+    "title": "Biology for Engineering — Class Slides",
+    "rPath": "biology/biology-for-engineering-class-slides.pptx"
+  },
+  {
+    "id": "cmts64htt000d10fnwiq6jhpj",
+    "path": "math/mathematics-assignment-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-assignment-2.pdf",
+    "title": "Mathematics — Assignment 2",
+    "rPath": "math/mathematics-assignment-2.pdf"
+  },
+  {
+    "id": "cmts64mo4000l10fnwyqh15q8",
+    "path": "electronics/unit-3-assignment.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-3-assignment.pdf",
+    "title": "Unit 3 Assignment",
+    "rPath": "electronics/unit-3-assignment.pdf"
+  },
+  {
+    "id": "cmts69l4f003x10fn6purv20g",
+    "path": "biology/recombinant-dna-technology-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/recombinant-dna-technology-notes.pdf",
+    "title": "Recombinant DNA Technology — Notes",
+    "rPath": "biology/recombinant-dna-technology-notes.pdf"
+  },
+  {
+    "id": "cmts64nll000n10fnov4qbjoh",
+    "path": "electronics/dc-circuits-unit-1-assignment-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/dc-circuits-unit-1-assignment-additional-set.pdf",
+    "title": "DC Circuits — Unit 1 Assignment",
+    "rPath": "electronics/dc-circuits-unit-1-assignment-additional-set.pdf"
+  },
+  {
+    "id": "cmts64pck000p10fnak4go9j1",
+    "path": "biology/bacteriology-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/bacteriology-notes.pdf",
+    "title": "Bacteriology — Notes",
+    "rPath": "biology/bacteriology-notes.pdf"
+  },
+  {
+    "id": "cmts65tye001510fn2eevhtl8",
+    "path": "biology/cardiovascular-system-class-slides-additional-set.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/cardiovascular-system-class-slides-additional-set.pptx",
+    "title": "Cardiovascular System — Class Slides",
+    "rPath": "biology/cardiovascular-system-class-slides-additional-set.pptx"
+  },
+  {
+    "id": "cmts64g9u000b10fnapj7ppvd",
+    "path": "languages/languages-for-engineers-assignment-2.docx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/languages-for-engineers-assignment-2.docx",
+    "title": "Languages for Engineers — Assignment 2",
+    "rPath": "languages/languages-for-engineers-assignment-2.docx"
+  },
+  {
+    "id": "cmts65v5c001710fnxqd8mfji",
+    "path": "biology/control-of-micro-organisms-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/control-of-micro-organisms-class-slides.pptx",
+    "title": "Control of Micro-organisms — Class Slides",
+    "rPath": "biology/control-of-micro-organisms-class-slides.pptx"
+  },
+  {
+    "id": "cmts66qs5001x10fn6jxhoyt0",
+    "path": "civil/history-of-civil-engineering-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/civil/history-of-civil-engineering-notes-additional-set.pdf",
+    "title": "History of Civil Engineering — Notes",
+    "rPath": "civil/history-of-civil-engineering-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrpi7t002hs0ll34t9hvj8",
+    "path": "mechanical/fluid-kinematics-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/fluid-kinematics-notes-additional-set.pdf",
+    "title": "Fluid Kinematics — Notes",
+    "rPath": "mechanical/fluid-kinematics-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts6apsa004p10fnzk0b35ny",
+    "path": "electronics/unit-1-feee-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-1-feee-notes.pdf",
+    "title": "Unit 1 — FEEE Notes",
+    "rPath": "electronics/unit-1-feee-notes.pdf"
+  },
+  {
+    "id": "cmts65wv9001910fnurcewqq9",
+    "path": "biology/dna-structure-function-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/dna-structure-function-notes.pdf",
+    "title": "DNA Structure & Function — Notes",
+    "rPath": "biology/dna-structure-function-notes.pdf"
+  },
+  {
+    "id": "cmtrrppje002ts0ll9xrdhubz",
+    "path": "mechanical/mechanical-properties-of-materials-question-bank-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-properties-of-materials-question-bank-additional-set.pdf",
+    "title": "Mechanical Properties of Materials — Question Bank",
+    "rPath": "mechanical/mechanical-properties-of-materials-question-bank-additional-set.pdf"
+  },
+  {
+    "id": "cmts65zig001b10fnenqjghpe",
+    "path": "biology/dna-structure-replication-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/dna-structure-replication-notes.pdf",
+    "title": "DNA Structure & Replication — Notes",
+    "rPath": "biology/dna-structure-replication-notes.pdf"
+  },
+  {
+    "id": "cmtrrola0001js0llm805pdf4",
+    "path": "it/fundamentals-of-it-mst-1-solutions.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/fundamentals-of-it-mst-1-solutions.pdf",
+    "title": "Fundamentals of IT — MST 1 Solutions",
+    "rPath": "it/fundamentals-of-it-mst-1-solutions.pdf"
+  },
+  {
+    "id": "cmts66356001f10fn0se5wee5",
+    "path": "electronics/lecture-1-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/lecture-1-notes.pdf",
+    "title": "Lecture 1 — Notes",
+    "rPath": "electronics/lecture-1-notes.pdf"
+  },
+  {
+    "id": "cmts661r1001d10fngmw3ifdk",
+    "path": "electronics/assignment-2-solved.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/assignment-2-solved.pdf",
+    "title": "Assignment 2 — Solved",
+    "rPath": "electronics/assignment-2-solved.pdf"
+  },
+  {
+    "id": "cmts664he001h10fngr6cfh75",
+    "path": "electronics/lecture-3-unit-2-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/lecture-3-unit-2-notes.pdf",
+    "title": "Lecture 3 (Unit 2) — Notes",
+    "rPath": "electronics/lecture-3-unit-2-notes.pdf"
+  },
+  {
+    "id": "cmtrrq8zj003fs0ll3df1d072",
+    "path": "mechanical/mechanical-engineering-end-semester-sample-paper-set-5.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-end-semester-sample-paper-set-5.pdf",
+    "title": "Mechanical Engineering — End-Semester Sample Paper (Set 5)",
+    "rPath": "mechanical/mechanical-engineering-end-semester-sample-paper-set-5.pdf"
+  },
+  {
+    "id": "cmts6asc0004t10fnn0qgtzgc",
+    "path": "electronics/voltage-current-unit-1-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/voltage-current-unit-1-notes.pdf",
+    "title": "Voltage & Current — Unit 1 Notes",
+    "rPath": "electronics/voltage-current-unit-1-notes.pdf"
+  },
+  {
+    "id": "cmts669l7001l10fnkg0bix1d",
+    "path": "biology/enzymes-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/enzymes-class-slides.pptx",
+    "title": "Enzymes — Class Slides",
+    "rPath": "biology/enzymes-class-slides.pptx"
+  },
+  {
+    "id": "cmtrrqftz003js0ll3fnvub3p",
+    "path": "physics/fiber-optics-class-slides-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/fiber-optics-class-slides-additional-set.pdf",
+    "title": "Fiber Optics — Class Slides",
+    "rPath": "physics/fiber-optics-class-slides-additional-set.pdf"
+  },
+  {
+    "id": "cmts66hyb001n10fnrlh50ed3",
+    "path": "electronics/unit-1-electrical-technology-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-1-electrical-technology-notes.pdf",
+    "title": "Unit 1 — Electrical Technology Notes",
+    "rPath": "electronics/unit-1-electrical-technology-notes.pdf"
+  },
+  {
+    "id": "cmts67whe002r10fnwde5uld4",
+    "path": "languages/linguistics-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/linguistics-notes-additional-set.pdf",
+    "title": "Linguistics — Notes",
+    "rPath": "languages/linguistics-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts66ndw001t10fn0ne3vfyr",
+    "path": "biology/fungi-structure-reproduction-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/fungi-structure-reproduction-notes.pdf",
+    "title": "Fungi — Structure & Reproduction — Notes",
+    "rPath": "biology/fungi-structure-reproduction-notes.pdf"
+  },
+  {
+    "id": "cmts67zyn002v10fnz63fy5os",
+    "path": "math/contributions-of-indian-mathematicians-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/contributions-of-indian-mathematicians-notes-additional-set.pdf",
+    "title": "Contributions of Indian Mathematicians — Notes",
+    "rPath": "math/contributions-of-indian-mathematicians-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts66juw001r10fndv1zd8br",
+    "path": "it/c-functions-lab-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/c-functions-lab-notes.pdf",
+    "title": "C Functions — Lab Notes",
+    "rPath": "it/c-functions-lab-notes.pdf"
+  },
+  {
+    "id": "cmts67e6x002f10fna6ujjllh",
+    "path": "electronics/karnaugh-maps-notes-set-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/karnaugh-maps-notes-set-2.pdf",
+    "title": "Karnaugh Maps — Notes (Set 2)",
+    "rPath": "electronics/karnaugh-maps-notes-set-2.pdf"
+  },
+  {
+    "id": "cmts679mw002910fn4cso2g7u",
+    "path": "it/fundamentals-of-it-assignment-7-8-9.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/fundamentals-of-it-assignment-7-8-9.pdf",
+    "title": "Fundamentals of IT — Assignment 7, 8 & 9",
+    "rPath": "it/fundamentals-of-it-assignment-7-8-9.pdf"
+  },
+  {
+    "id": "cmts66tqt002110fn4vrkpoji",
+    "path": "languages/languages-for-engineers-assignment-1.docx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/languages-for-engineers-assignment-1.docx",
+    "title": "Languages for Engineers — Assignment 1",
+    "rPath": "languages/languages-for-engineers-assignment-1.docx"
+  },
+  {
+    "id": "cmts66shd001z10fnij91p5t0",
+    "path": "chemistry/applied-chemistry-home-assignment-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/applied-chemistry-home-assignment-1.pdf",
+    "title": "Applied Chemistry — Home Assignment 1",
+    "rPath": "chemistry/applied-chemistry-home-assignment-1.pdf"
+  },
+  {
+    "id": "cmts67cl8002d10fnc0afxc15",
+    "path": "electronics/karnaugh-maps-notes-set-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/karnaugh-maps-notes-set-1.pdf",
+    "title": "Karnaugh Maps — Notes (Set 1)",
+    "rPath": "electronics/karnaugh-maps-notes-set-1.pdf"
+  },
+  {
+    "id": "cmts67v4r002p10fn7hw96iq6",
+    "path": "civil/trusses-lecture-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/civil/trusses-lecture-notes.pdf",
+    "title": "Trusses — Lecture Notes",
+    "rPath": "civil/trusses-lecture-notes.pdf"
+  },
+  {
+    "id": "cmts67b6e002b10fnrzepj8bd",
+    "path": "it/fundamentals-of-it-mst-2-syllabus.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/fundamentals-of-it-mst-2-syllabus.pdf",
+    "title": "Fundamentals of IT — MST 2 Syllabus",
+    "rPath": "it/fundamentals-of-it-mst-2-syllabus.pdf"
+  },
+  {
+    "id": "cmts67hu4002h10fn9cum1qz4",
+    "path": "electronics/lecture-10-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/lecture-10-notes.pdf",
+    "title": "Lecture 10 — Notes",
+    "rPath": "electronics/lecture-10-notes.pdf"
+  },
+  {
+    "id": "cmts66wcv002310fnu9jcaf4e",
+    "path": "math/permutations-combinations-example-problems.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/permutations-combinations-example-problems.pdf",
+    "title": "Permutations & Combinations — Example Problems",
+    "rPath": "math/permutations-combinations-example-problems.pdf"
+  },
+  {
+    "id": "cmts69al4003l10fnyqvzc5gg",
+    "path": "biology/nervous-system-class-slides-set-2.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/nervous-system-class-slides-set-2.pptx",
+    "title": "Nervous System — Class Slides (Set 2)",
+    "rPath": "biology/nervous-system-class-slides-set-2.pptx"
+  },
+  {
+    "id": "cmts66irh001p10fn9wg6d36p",
+    "path": "electronics/practice-set-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/practice-set-1.pdf",
+    "title": "Practice Set 1",
+    "rPath": "electronics/practice-set-1.pdf"
+  },
+  {
+    "id": "cmts69s9s004310fnu20o5xgk",
+    "path": "math/mathematics-mst-1-question-paper-additional-copy.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-mst-1-question-paper-additional-copy.pdf",
+    "title": "Mathematics — MST 1 Question Paper (Additional Copy)",
+    "rPath": "math/mathematics-mst-1-question-paper-additional-copy.pdf"
+  },
+  {
+    "id": "cmts69ohm003z10fn5kxtsv8a",
+    "path": "languages/languages-for-engineers-mst-1-question-paper.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/languages-for-engineers-mst-1-question-paper.pdf",
+    "title": "Languages for Engineers — MST 1 Question Paper",
+    "rPath": "languages/languages-for-engineers-mst-1-question-paper.pdf"
+  },
+  {
+    "id": "cmts69cvr003n10fngak7r5yb",
+    "path": "physics/quantum-computing-unit-5-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/quantum-computing-unit-5-notes-additional-set.pdf",
+    "title": "Quantum Computing — Unit 5 Notes",
+    "rPath": "physics/quantum-computing-unit-5-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts68ofe003510fnkl417na5",
+    "path": "math/mathematics-notes-additional-set-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-notes-additional-set-2.pdf",
+    "title": "Mathematics — Notes",
+    "rPath": "math/mathematics-notes-additional-set-2.pdf"
+  },
+  {
+    "id": "cmts696i6003h10fn59ccqk5w",
+    "path": "mechanical/mechanical-engineering-mst-3-solution.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-mst-3-solution.pdf",
+    "title": "Mechanical Engineering — MST 3 Solution",
+    "rPath": "mechanical/mechanical-engineering-mst-3-solution.pdf"
+  },
+  {
+    "id": "cmts676sl002710fn4zkh1zqy",
+    "path": "mechanical/machine-shop-lab-manual.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/machine-shop-lab-manual.pdf",
+    "title": "Machine Shop — Lab Manual",
+    "rPath": "mechanical/machine-shop-lab-manual.pdf"
+  },
+  {
+    "id": "cmts684gy002x10fn5angfbzo",
+    "path": "math/mathematics-pyqs-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-pyqs-additional-set.pdf",
+    "title": "Mathematics — PYQs",
+    "rPath": "math/mathematics-pyqs-additional-set.pdf"
+  },
+  {
+    "id": "cmts6999d003j10fnh7kjjv9o",
+    "path": "biology/nervous-system-class-slides-set-1.ppt",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/nervous-system-class-slides-set-1.ppt",
+    "title": "Nervous System — Class Slides (Set 1)",
+    "rPath": "biology/nervous-system-class-slides-set-1.ppt"
+  },
+  {
+    "id": "cmts69q1d004110fneeewksuz",
+    "path": "math/mathematics-for-data-science-mst-2-question-paper.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-for-data-science-mst-2-question-paper.pdf",
+    "title": "Mathematics for Data Science — MST 2 Question Paper",
+    "rPath": "math/mathematics-for-data-science-mst-2-question-paper.pdf"
+  },
+  {
+    "id": "cmts691zg003d10fng7kuvsu8",
+    "path": "biology/microbiology-of-virus-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/microbiology-of-virus-notes.pdf",
+    "title": "Microbiology of Virus — Notes",
+    "rPath": "biology/microbiology-of-virus-notes.pdf"
+  },
+  {
+    "id": "cmts68szx003710fnxxvazipx",
+    "path": "math/random-variables-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/random-variables-notes.pdf",
+    "title": "Random Variables — Notes",
+    "rPath": "math/random-variables-notes.pdf"
+  },
+  {
+    "id": "cmts6947n003f10fnmjpe7sjm",
+    "path": "math/mathematics-mst-2-solutions.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-mst-2-solutions.pdf",
+    "title": "Mathematics — MST 2 Solutions",
+    "rPath": "math/mathematics-mst-2-solutions.pdf"
+  },
+  {
+    "id": "cmts69tcy004510fnyqsp694p",
+    "path": "mechanical/isometric-projection-practice-sheet-6.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/isometric-projection-practice-sheet-6.pdf",
+    "title": "Isometric Projection — Practice Sheet 6",
+    "rPath": "mechanical/isometric-projection-practice-sheet-6.pdf"
+  },
+  {
+    "id": "cmts68iy5003310fnmewc2vdc",
+    "path": "math/mathematics-assignment-solutions.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-assignment-solutions.pdf",
+    "title": "Mathematics — Assignment Solutions",
+    "rPath": "math/mathematics-assignment-solutions.pdf"
+  },
+  {
+    "id": "cmts686cy002z10fnx8esyvoc",
+    "path": "math/mathematics-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-notes.pdf",
+    "title": "Mathematics — Notes",
+    "rPath": "math/mathematics-notes.pdf"
+  },
+  {
+    "id": "cmts68ff4003110fnrn8i7fcf",
+    "path": "math/mathematics-for-data-science-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-for-data-science-notes.pdf",
+    "title": "Mathematics for Data Science — Notes",
+    "rPath": "math/mathematics-for-data-science-notes.pdf"
+  },
+  {
+    "id": "cmtrrnhxe000hs0llg6acaznw",
+    "path": "chemistry/water-technology-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/water-technology-class-slides.pdf",
+    "title": "Water Technology — Class Slides",
+    "rPath": "chemistry/water-technology-class-slides.pdf"
+  },
+  {
+    "id": "cmtrrncao000ds0llnis4288x",
+    "path": "chemistry/water-technology-unit-1-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/water-technology-unit-1-notes.pdf",
+    "title": "Water Technology — Unit 1 Notes",
+    "rPath": "chemistry/water-technology-unit-1-notes.pdf"
+  },
+  {
+    "id": "cmts6908j003b10fnwqhxqroo",
+    "path": "biology/basic-structure-of-bacteria-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/basic-structure-of-bacteria-notes.pdf",
+    "title": "Basic Structure of Bacteria — Notes",
+    "rPath": "biology/basic-structure-of-bacteria-notes.pdf"
+  },
+  {
+    "id": "cmtrrn35l0005s0llfr0223ks",
+    "path": "chemistry/applied-chemistry-practicals.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/applied-chemistry-practicals.pdf",
+    "title": "Applied Chemistry — Practicals",
+    "rPath": "chemistry/applied-chemistry-practicals.pdf"
+  },
+  {
+    "id": "cmtrrn0dt0003s0llci90jewr",
+    "path": "chemistry/applied-chemistry-lab-manual.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/applied-chemistry-lab-manual.pdf",
+    "title": "Applied Chemistry — Lab Manual",
+    "rPath": "chemistry/applied-chemistry-lab-manual.pdf"
+  },
+  {
+    "id": "cmts69wzk004910fnx8ntnghp",
+    "path": "languages/sq3r-reading-method-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/sq3r-reading-method-notes-additional-set.pdf",
+    "title": "SQ3R Reading Method — Notes",
+    "rPath": "languages/sq3r-reading-method-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrn5kf0007s0ll1990a9xe",
+    "path": "chemistry/lubricants-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/lubricants-class-slides.pdf",
+    "title": "Lubricants — Class Slides",
+    "rPath": "chemistry/lubricants-class-slides.pdf"
+  },
+  {
+    "id": "cmts69ecd003p10fnvc3z7gal",
+    "path": "mechanical/orthographic-projections-practice-sheet-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/orthographic-projections-practice-sheet-1.pdf",
+    "title": "Orthographic Projections — Practice Sheet 1",
+    "rPath": "mechanical/orthographic-projections-practice-sheet-1.pdf"
+  },
+  {
+    "id": "cmts69zor004d10fnq6dkcojd",
+    "path": "chemistry/acid-base-indicators-support-material.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/acid-base-indicators-support-material.pdf",
+    "title": "Acid-Base Indicators — Support Material",
+    "rPath": "chemistry/acid-base-indicators-support-material.pdf"
+  },
+  {
+    "id": "cmts6a5ac004l10fnu3d5enbi",
+    "path": "electronics/dc-circuits-unit-1-tutorial-problems.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/dc-circuits-unit-1-tutorial-problems.pdf",
+    "title": "DC Circuits — Unit 1 Tutorial Problems",
+    "rPath": "electronics/dc-circuits-unit-1-tutorial-problems.pdf"
+  },
+  {
+    "id": "cmts69ydo004b10fn99sjconx",
+    "path": "biology/structure-function-of-biomolecules-class-slides.pptx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/biology/structure-function-of-biomolecules-class-slides.pptx",
+    "title": "Structure & Function of Biomolecules — Class Slides",
+    "rPath": "biology/structure-function-of-biomolecules-class-slides.pptx"
+  },
+  {
+    "id": "cmtrrmyma0001s0llt4pw1eys",
+    "path": "chemistry/applied-chemistry-end-semester-paper-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/chemistry/applied-chemistry-end-semester-paper-2025.pdf",
+    "title": "Applied Chemistry — End-Semester Paper (2025)",
+    "rPath": "chemistry/applied-chemistry-end-semester-paper-2025.pdf"
+  },
+  {
+    "id": "cmtrrootu001ps0llapfuf9gn",
+    "path": "it/unit-1-basic-concepts-of-it-question-bank.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/unit-1-basic-concepts-of-it-question-bank.pdf",
+    "title": "Unit 1 (Basic Concepts of IT) — Question Bank",
+    "rPath": "it/unit-1-basic-concepts-of-it-question-bank.pdf"
+  },
+  {
+    "id": "cmtrro1f8000zs0llkl349aw6",
+    "path": "it/mst-1-syllabus-coverage-sheet.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/mst-1-syllabus-coverage-sheet.pdf",
+    "title": "MST-1 Syllabus Coverage Sheet",
+    "rPath": "it/mst-1-syllabus-coverage-sheet.pdf"
+  },
+  {
+    "id": "cmts6ay37005110fngtw9jzkj",
+    "path": "electronics/unit-5-feee-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-5-feee-notes.pdf",
+    "title": "Unit 5 — FEEE Notes",
+    "rPath": "electronics/unit-5-feee-notes.pdf"
+  },
+  {
+    "id": "cmtrrntpg000ps0lljmjoyvrl",
+    "path": "it/c-language-question-bank-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/c-language-question-bank-1.pdf",
+    "title": "C Language — Question Bank 1",
+    "rPath": "it/c-language-question-bank-1.pdf"
+  },
+  {
+    "id": "cmtrro27s0011s0ll4ab70ikn",
+    "path": "it/fundamentals-of-it-end-semester-paper-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/fundamentals-of-it-end-semester-paper-2025.pdf",
+    "title": "Fundamentals of IT — End-Semester Paper (2025)",
+    "rPath": "it/fundamentals-of-it-end-semester-paper-2025.pdf"
+  },
+  {
+    "id": "cmtrrnw1b000ts0ll2f4n6yy7",
+    "path": "it/dbms-notes-version-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/dbms-notes-version-1.pdf",
+    "title": "DBMS — Notes (Version 1)",
+    "rPath": "it/dbms-notes-version-1.pdf"
+  },
+  {
+    "id": "cmtrrocvd001bs0ll8wvtsvqb",
+    "path": "it/introduction-to-ai-question-bank.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/introduction-to-ai-question-bank.pdf",
+    "title": "Introduction to AI — Question Bank",
+    "rPath": "it/introduction-to-ai-question-bank.pdf"
+  },
+  {
+    "id": "cmtrrny7h000vs0ll681syfkh",
+    "path": "it/dbms-notes-version-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/dbms-notes-version-2.pdf",
+    "title": "DBMS — Notes (Version 2)",
+    "rPath": "it/dbms-notes-version-2.pdf"
+  },
+  {
+    "id": "cmtrro01t000xs0lloq46uwdi",
+    "path": "it/dbms-question-bank.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/dbms-question-bank.pdf",
+    "title": "DBMS — Question Bank",
+    "rPath": "it/dbms-question-bank.pdf"
+  },
+  {
+    "id": "cmtrrp4pl0021s0ll0zu4lv2o",
+    "path": "math/mathematics-end-semester-pyqs-20182024.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-end-semester-pyqs-20182024.pdf",
+    "title": "Mathematics — End-Semester PYQs (2018–2024)",
+    "rPath": "math/mathematics-end-semester-pyqs-20182024.pdf"
+  },
+  {
+    "id": "cmtrro4v50013s0llgsvt5od2",
+    "path": "it/fundamentals-of-it-end-semester-pyqs-20192024.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/fundamentals-of-it-end-semester-pyqs-20192024.pdf",
+    "title": "Fundamentals of IT — End-Semester PYQs (2019–2024)",
+    "rPath": "it/fundamentals-of-it-end-semester-pyqs-20192024.pdf"
+  },
+  {
+    "id": "cmtrrp87y0025s0llebe9427k",
+    "path": "math/mathematics-end-semester-paper-december-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-end-semester-paper-december-2025.pdf",
+    "title": "Mathematics — End-Semester Paper (December 2025)",
+    "rPath": "math/mathematics-end-semester-paper-december-2025.pdf"
+  },
+  {
+    "id": "cmtrrow9p001ts0ll81d5oacs",
+    "path": "math/differential-equations-notes-set-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/differential-equations-notes-set-1.pdf",
+    "title": "Differential Equations — Notes (Set 1)",
+    "rPath": "math/differential-equations-notes-set-1.pdf"
+  },
+  {
+    "id": "cmtrrpqfz002vs0llutm4dl61",
+    "path": "mechanical/mechanical-properties-of-materials-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-properties-of-materials-notes-additional-set.pdf",
+    "title": "Mechanical Properties of Materials — Notes",
+    "rPath": "mechanical/mechanical-properties-of-materials-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrpkmh002ls0ll3xigph9e",
+    "path": "mechanical/ic-engines-automobiles-question-bank.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/ic-engines-automobiles-question-bank.pdf",
+    "title": "IC Engines & Automobiles — Question Bank",
+    "rPath": "mechanical/ic-engines-automobiles-question-bank.pdf"
+  },
+  {
+    "id": "cmts6aqiz004r10fnhbus17cf",
+    "path": "languages/unit-1-question-bank.docx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/unit-1-question-bank.docx",
+    "title": "Unit 1 — Question Bank",
+    "rPath": "languages/unit-1-question-bank.docx"
+  },
+  {
+    "id": "cmtrrpxei0031s0llpth7olal",
+    "path": "mechanical/unit-2-theory-of-machines-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/unit-2-theory-of-machines-class-slides.pdf",
+    "title": "Unit 2 — Theory of Machines — Class Slides",
+    "rPath": "mechanical/unit-2-theory-of-machines-class-slides.pdf"
+  },
+  {
+    "id": "cmts6awl6004z10fnkmq9sn2r",
+    "path": "electronics/unit-4-feee-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-4-feee-notes.pdf",
+    "title": "Unit 4 — FEEE Notes",
+    "rPath": "electronics/unit-4-feee-notes.pdf"
+  },
+  {
+    "id": "cmtrrpj5x002js0lla32vn3gr",
+    "path": "mechanical/fluid-kinematics-question-bank.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/fluid-kinematics-question-bank.pdf",
+    "title": "Fluid Kinematics — Question Bank",
+    "rPath": "mechanical/fluid-kinematics-question-bank.pdf"
+  },
+  {
+    "id": "cmts6b0g7005510fnez27pmwt",
+    "path": "math/contributions-of-indians-in-statistics-data-science-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/contributions-of-indians-in-statistics-data-science-notes.pdf",
+    "title": "Contributions of Indians in Statistics & Data Science — Notes",
+    "rPath": "math/contributions-of-indians-in-statistics-data-science-notes.pdf"
+  },
+  {
+    "id": "cmts66oxe001v10fnq6jwuogi",
+    "path": "electronics/half-adder-full-adder-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/half-adder-full-adder-notes.pdf",
+    "title": "Half Adder & Full Adder — Notes",
+    "rPath": "electronics/half-adder-full-adder-notes.pdf"
+  },
+  {
+    "id": "cmtrrq4jt0037s0llsydep7w0",
+    "path": "mechanical/mechanical-engineering-end-semester-sample-paper-set-1.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-end-semester-sample-paper-set-1.pdf",
+    "title": "Mechanical Engineering — End-Semester Sample Paper (Set 1)",
+    "rPath": "mechanical/mechanical-engineering-end-semester-sample-paper-set-1.pdf"
+  },
+  {
+    "id": "cmtrrq6x3003bs0ll7d8p3ebz",
+    "path": "mechanical/mechanical-engineering-end-semester-sample-paper-set-3.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-end-semester-sample-paper-set-3.pdf",
+    "title": "Mechanical Engineering — End-Semester Sample Paper (Set 3)",
+    "rPath": "mechanical/mechanical-engineering-end-semester-sample-paper-set-3.pdf"
+  },
+  {
+    "id": "cmtrrq3mz0035s0llks0h6b0z",
+    "path": "mechanical/unit-4-ic-engines-automobiles-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/unit-4-ic-engines-automobiles-class-slides.pdf",
+    "title": "Unit 4 — IC Engines & Automobiles — Class Slides",
+    "rPath": "mechanical/unit-4-ic-engines-automobiles-class-slides.pdf"
+  },
+  {
+    "id": "cmts6au2q004v10fntbg09uu2",
+    "path": "electronics/unit-2-feee-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/unit-2-feee-notes.pdf",
+    "title": "Unit 2 — FEEE Notes",
+    "rPath": "electronics/unit-2-feee-notes.pdf"
+  },
+  {
+    "id": "cmtrrq7rt003ds0llsrhdc47r",
+    "path": "mechanical/mechanical-engineering-end-semester-sample-paper-set-4.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-end-semester-sample-paper-set-4.pdf",
+    "title": "Mechanical Engineering — End-Semester Sample Paper (Set 4)",
+    "rPath": "mechanical/mechanical-engineering-end-semester-sample-paper-set-4.pdf"
+  },
+  {
+    "id": "cmtrrq5rt0039s0llp4agnhgb",
+    "path": "mechanical/mechanical-engineering-end-semester-sample-paper-set-2.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/mechanical-engineering-end-semester-sample-paper-set-2.pdf",
+    "title": "Mechanical Engineering — End-Semester Sample Paper (Set 2)",
+    "rPath": "mechanical/mechanical-engineering-end-semester-sample-paper-set-2.pdf"
+  },
+  {
+    "id": "cmts6avd9004x10fnmfjgi0ht",
+    "path": "languages/unit-2-question-bank.docx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/languages/unit-2-question-bank.docx",
+    "title": "Unit 2 — Question Bank",
+    "rPath": "languages/unit-2-question-bank.docx"
+  },
+  {
+    "id": "cmtrrq05d0033s0llsyelua8y",
+    "path": "mechanical/unit-3-fluid-kinematics-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/unit-3-fluid-kinematics-class-slides.pdf",
+    "title": "Unit 3 — Fluid Kinematics — Class Slides",
+    "rPath": "mechanical/unit-3-fluid-kinematics-class-slides.pdf"
+  },
+  {
+    "id": "cmtrrprhc002xs0llge096had",
+    "path": "mechanical/theory-of-machines-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/theory-of-machines-notes-additional-set.pdf",
+    "title": "Theory of Machines — Notes",
+    "rPath": "mechanical/theory-of-machines-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrqhz5003ls0llmorkkd5n",
+    "path": "physics/fibre-optics-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/fibre-optics-notes-additional-set.pdf",
+    "title": "Fibre Optics — Notes",
+    "rPath": "physics/fibre-optics-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrqea2003hs0llnwunhcy3",
+    "path": "physics/applied-physics-complete-first-year-notes-set-3.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/applied-physics-complete-first-year-notes-set-3.pdf",
+    "title": "Applied Physics — Complete First-Year Notes (Set 3)",
+    "rPath": "physics/applied-physics-complete-first-year-notes-set-3.pdf"
+  },
+  {
+    "id": "cmtrrqq0b003ns0lll95vi0dl",
+    "path": "physics/applied-physics-full-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/applied-physics-full-notes.pdf",
+    "title": "Applied Physics — Full Notes",
+    "rPath": "physics/applied-physics-full-notes.pdf"
+  },
+  {
+    "id": "cmtrrqtc2003ps0llriaxa80c",
+    "path": "physics/laser-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/laser-notes-additional-set.pdf",
+    "title": "LASER — Notes",
+    "rPath": "physics/laser-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrqwlo003ts0llsinitxo8",
+    "path": "physics/applied-physics-end-semester-paper-1-2025.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/applied-physics-end-semester-paper-1-2025.pdf",
+    "title": "Applied Physics — End-Semester Paper 1 (2025)",
+    "rPath": "physics/applied-physics-end-semester-paper-1-2025.pdf"
+  },
+  {
+    "id": "cmtrrquj9003rs0lleidr34rh",
+    "path": "physics/applied-physics-sample-paper-4-sets.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/applied-physics-sample-paper-4-sets.pdf",
+    "title": "Applied Physics — Sample Paper (4 Sets)",
+    "rPath": "physics/applied-physics-sample-paper-4-sets.pdf"
+  },
+  {
+    "id": "cmtrrr5g2003xs0llwp4o6gbj",
+    "path": "physics/quantum-computing-class-slides-ppt-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/quantum-computing-class-slides-ppt-additional-set.pdf",
+    "title": "Quantum Computing — Class Slides (PPT)",
+    "rPath": "physics/quantum-computing-class-slides-ppt-additional-set.pdf"
+  },
+  {
+    "id": "cmts69vnb004710fnnllij3xn",
+    "path": "math/mathematics-mst-1-solutions.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/mathematics-mst-1-solutions.pdf",
+    "title": "Mathematics — MST 1 Solutions",
+    "rPath": "math/mathematics-mst-1-solutions.pdf"
+  },
+  {
+    "id": "cmtrrr7e1003zs0ll5n9v2rqo",
+    "path": "physics/quantum-computing-class-slides-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/quantum-computing-class-slides-additional-set.pdf",
+    "title": "Quantum Computing — Class Slides",
+    "rPath": "physics/quantum-computing-class-slides-additional-set.pdf"
+  },
+  {
+    "id": "cmtrrre1n0045s0llkdigznzg",
+    "path": "physics/special-theory-of-relativity-notes-additional-set.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/physics/special-theory-of-relativity-notes-additional-set.pdf",
+    "title": "Special Theory of Relativity — Notes",
+    "rPath": "physics/special-theory-of-relativity-notes-additional-set.pdf"
+  },
+  {
+    "id": "cmts6f5wj0001zivrfclbol9d",
+    "path": "it/c-programming-assignment-4.docx",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/it/c-programming-assignment-4.docx",
+    "title": "C Programming — Assignment 4",
+    "rPath": "it/c-programming-assignment-4.docx"
+  },
+  {
+    "id": "cmts6b30p005710fne5sx2wyv",
+    "path": "electronics/magnetic-circuits-unit-3-notes-lectures-12.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/electronics/magnetic-circuits-unit-3-notes-lectures-12.pdf",
+    "title": "Magnetic Circuits — Unit 3 Notes (Lectures 1–2)",
+    "rPath": "electronics/magnetic-circuits-unit-3-notes-lectures-12.pdf"
+  },
+  {
+    "id": "cmts6azkw005310fnhv1bsw84",
+    "path": "math/introduction-to-data-tools-unit-5-notes.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/math/introduction-to-data-tools-unit-5-notes.pdf",
+    "title": "Introduction to Data Tools — Unit 5 Notes",
+    "rPath": "math/introduction-to-data-tools-unit-5-notes.pdf"
+  },
+  {
+    "id": "cmtrrptki002zs0llhkjjplad",
+    "path": "mechanical/unit-1-mechanical-properties-of-materials-class-slides.pdf",
+    "fileUrl": "https://fr0cg5ys41r4psru.public.blob.vercel-storage.com/mechanical/unit-1-mechanical-properties-of-materials-class-slides.pdf",
+    "title": "Unit 1 — Mechanical Properties of Materials — Class Slides",
+    "rPath": "mechanical/unit-1-mechanical-properties-of-materials-class-slides.pdf"
+  }
+]

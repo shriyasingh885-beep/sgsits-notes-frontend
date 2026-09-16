@@ -1,0 +1,12 @@
+general/endsem-2022-paper1.pdf  size=17822629
+general/endsem-2022-paper2.pdf  size=13128731
+chemistry/chemistry-previous-years-2.pdf  size=846594
+chemistry/chemistry-1st-mst.pdf  size=11111232
+electronics/ece-syllabus.pdf  size=111099
+general/endsem-pyq-compilation.pdf  size=32398990
+general/endsem-2015-19-compilation.pdf  size=26597184
+mathematics/m02-previous-years-2.pdf  size=1419915
+mathematics/mathematics-2-mst1.pdf  size=8259085
+programming/programming-mst1.pdf  size=13869470
+general/sem2-syllabus.pdf  size=1089537
+languages/technical-english-mst1.pdf  size=8805420

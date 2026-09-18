@@ -13,7 +13,7 @@ export default function Breadcrumb({ items, className }: { items: Crumb[]; class
         return (
           <span key={`${item.label}-${i}`} className="flex items-center gap-1">
             {item.href && !last ? (
-              <Link href={item.href} className="transition duration-calm ease-calm hover:text-sage-700">
+              <Link prefetch={true} href={item.href} className="transition duration-calm ease-calm hover:text-sage-700">
                 {item.label}
               </Link>
             ) : (

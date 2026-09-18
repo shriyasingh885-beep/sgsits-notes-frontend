@@ -26,7 +26,7 @@ export default function Sidebar() {
   const item = (href: string, Icon: React.ElementType, label: string) => {
     const active = isActive(href);
     return (
-      <Link
+      <Link prefetch={true}
         key={href}
         href={href}
         className={cn(
@@ -58,7 +58,7 @@ export default function Sidebar() {
       )}
     >
       {/* Wordmark */}
-      <Link href="/" className="flex items-center gap-3 px-5 py-6 shrink-0">
+      <Link prefetch={true} href="/" className="flex items-center gap-3 px-5 py-6 shrink-0">
         <img src="/sgsits-logo.webp" alt="SGSITS crest" className="h-10 w-10 shrink-0 rounded-full object-cover shadow-sm" />
         <span className="leading-tight">
           <span className="block text-micro font-semibold uppercase tracking-[0.16em] text-text-faint">SGSITS</span>
@@ -86,17 +86,17 @@ export default function Sidebar() {
 
       {/* Bottom card: contribute + disclaimer */}
       <div className="mx-3 mb-4 mt-2">
-        <div className="relative overflow-hidden rounded-panel border border-sage-100 bg-primary-soft p-4">
+        <div className="relative overflow-hidden rounded-panel border border-border bg-primary-soft p-4">
           <span className="absolute -right-3 -top-3 flex h-14 w-14 items-center justify-center rounded-full bg-cream text-cream-ink opacity-70">
             <Sparkles size={20} strokeWidth={1.6} />
           </span>
-          <p className="relative text-body font-semibold text-primary-strong mb-1">Contribute notes</p>
-          <p className="relative text-micro text-sage-700 mb-3 leading-relaxed max-w-[85%]">
+          <p className="relative text-body font-semibold text-ink mb-1">Contribute notes</p>
+          <p className="relative text-micro text-secondary mb-3 leading-relaxed max-w-[85%]">
             Share your notes and help fellow students.
           </p>
-          <Link
+          <Link prefetch={true}
             href="/uploads"
-            className="relative inline-flex items-center gap-1 rounded-button bg-surface px-3 py-1.5 text-micro font-semibold text-sage-700 shadow-sm transition duration-calm ease-calm hover:text-sage-800"
+            className="relative inline-flex items-center gap-1 rounded-button bg-surface px-3 py-1.5 text-micro font-semibold text-ink shadow-sm transition duration-calm ease-calm hover:text-primary"
           >
             Upload notes <ChevronRight size={12} />
           </Link>

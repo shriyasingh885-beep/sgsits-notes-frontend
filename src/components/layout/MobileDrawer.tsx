@@ -41,7 +41,7 @@ export default function MobileDrawer() {
   const item = (href: string, Icon: React.ElementType, label: string) => {
     const active = isActive(href);
     return (
-      <Link
+      <Link prefetch={true}
         key={href}
         href={href}
         onClick={closeMobileDrawer}
@@ -80,7 +80,7 @@ export default function MobileDrawer() {
         )}
       >
         <div className="flex items-center justify-between px-5 py-5">
-          <Link href="/" onClick={closeMobileDrawer} className="flex items-center gap-3">
+          <Link prefetch={true} href="/" onClick={closeMobileDrawer} className="flex items-center gap-3">
             <img src="/sgsits-logo.webp" alt="SGSITS crest" className="h-9 w-9 shrink-0 rounded-full object-cover shadow-sm" />
             <span className="leading-tight">
               <span className="block text-micro font-semibold uppercase tracking-[0.16em] text-text-faint">SGSITS</span>

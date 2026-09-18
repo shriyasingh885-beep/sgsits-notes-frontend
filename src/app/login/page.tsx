@@ -68,7 +68,7 @@ export default function LoginPage() {
 
         <p className="mt-6 text-center text-meta text-secondary">
           Browsing SGSITS NotesVault doesn&rsquo;t need an account —{' '}
-          <Link href="/" className="font-semibold text-sage-600 hover:underline">
+          <Link prefetch={true} href="/" className="font-semibold text-sage-600 hover:underline">
             go to the notes
           </Link>
           .

@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import SubjectCard from '@/components/ui/SubjectCard';
 import EmptyState from '@/components/ui/EmptyState';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function BranchSemesterSubjectsPage({ params }: { params: { collegeSlug: string, year: string, branchSlug: string, semNum: string } }) {
   const [college, branch] = await Promise.all([

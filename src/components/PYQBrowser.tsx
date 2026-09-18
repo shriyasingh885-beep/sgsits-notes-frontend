@@ -77,13 +77,13 @@ export default function PYQBrowser({ pyqs }: { pyqs: any[] }) {
                     </span>
                     <BookmarkButton resourceId={p.id} />
                   </div>
-                  <Link href={`/notes/${p.id}`} className="flex-1">
+                  <Link prefetch={true} href={`/notes/${p.id}`} className="flex-1">
                     <p className="text-meta font-semibold text-sage-700">{p.subject.name}</p>
                     <p className="mt-0.5 line-clamp-2 text-body-lg font-semibold text-ink">{p.title}</p>
                   </Link>
                   <div className="flex items-center justify-between pt-1">
                     <TypeBadge type={p.type} />
-                    <Link
+                    <Link prefetch={true}
                       href={`/notes/${p.id}`}
                       className="flex items-center gap-0.5 text-meta font-semibold text-sage-700 transition group-hover:gap-1.5"
                     >

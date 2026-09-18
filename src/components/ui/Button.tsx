@@ -62,7 +62,7 @@ export function LinkButton({
   className?: string;
 }) {
   return (
-    <Link href={href} className={buttonClasses(variant, size, className)}>
+    <Link prefetch={true} href={href} className={buttonClasses(variant, size, className)}>
       {children}
     </Link>
   );

@@ -2,7 +2,7 @@ import { prisma } from '@/lib/prisma';
 import PageHeader from '@/components/ui/PageHeader';
 import PYQBrowser from '@/components/PYQBrowser';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function PYQPage() {
   const pyqs = await prisma.resource.findMany({

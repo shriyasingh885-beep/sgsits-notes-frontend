@@ -4,7 +4,7 @@ import PageHeader from '@/components/ui/PageHeader';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import Card from '@/components/ui/Card';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function BranchYearPage({ params }: { params: { collegeSlug: string, year: string, branchSlug: string } }) {
   const [college, branch] = await Promise.all([
@@ -23,7 +23,7 @@ export default async function BranchYearPage({ params }: { params: { collegeSlug
       
       <div className="grid sm:grid-cols-2 gap-4">
         {semesters.map(s => (
-          <Link key={s} href={`/browse/${college.slug}/${params.year}/branch/${branch.slug}/${s}`}>
+          <Link prefetch={true} key={s} href={`/browse/${college.slug}/${params.year}/branch/${branch.slug}/${s}`}>
             <Card hover className="p-5">
               <p className="font-semibold text-card-title text-ink">Semester {s}</p>
             </Card>

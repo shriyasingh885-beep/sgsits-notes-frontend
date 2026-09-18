@@ -29,6 +29,7 @@ export function SubjectCard({ id, name, code, notes, pyqs = 0, layout = "grid", 
     const meta = [`${notes} ${notes === 1 ? "Note" : "Notes"}`, pyqs > 0 && `${pyqs} PYQs`].filter(Boolean).join(" · ");
     return (
       <Link
+  prefetch={true}
         href={`/subjects/${id}`}
         className={cn(
           "group flex items-center gap-3.5 rounded-md border border-border bg-surface px-4 py-3.5 shadow-sm",
@@ -59,6 +60,7 @@ export function SubjectCard({ id, name, code, notes, pyqs = 0, layout = "grid", 
 
   return (
     <Link
+  prefetch={true}
       href={`/subjects/${id}`}
       className={cn(
         "group relative flex h-[196px] flex-col justify-between rounded-md border border-border bg-surface p-4.5 shadow-sm",

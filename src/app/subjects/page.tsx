@@ -1,7 +1,7 @@
 import { prisma } from '@/lib/prisma';
 import SubjectsGrid from '@/components/SubjectsGrid';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function SubjectsPage() {
   const subjects = await prisma.subject.findMany({ 

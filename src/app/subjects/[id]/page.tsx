@@ -4,7 +4,7 @@ import SubjectTabs from '@/components/SubjectTabs';
 import { getBookmarkedIds } from '@/lib/bookmarks';
 import { notFound } from 'next/navigation';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function SubjectDetailPage({ params }: { params: { id: string } }) {
   const [subject, bookmarkedIds] = await Promise.all([

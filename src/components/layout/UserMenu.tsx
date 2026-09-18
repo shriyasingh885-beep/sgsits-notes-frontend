@@ -49,7 +49,7 @@ export default function UserMenu({ session }: { session: Session | null }) {
             {([
               { href: '/uploads', icon: Upload, label: 'My Uploads' },
             ] as const).map(({ href, icon: Icon, label }) => (
-              <Link
+              <Link prefetch={true}
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}

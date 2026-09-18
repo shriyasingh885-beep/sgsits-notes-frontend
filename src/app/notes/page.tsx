@@ -6,8 +6,43 @@ import EmptyState from '@/components/ui/EmptyState';
 import NotesFilters from '@/components/NotesFilters';
 import { searchWhere, contentSnippet } from '@/lib/search';
 import type { Prisma } from '@prisma/client';
+import { unstable_cache } from 'next/cache';
 
-export const dynamic = 'force-dynamic';
+const fetchNotesFromDb = async (q: string | undefined, type: string | undefined, year: string | undefined, sort: string | undefined) => {
+    const where: Prisma.ResourceWhereInput = { status: 'APPROVED', ...searchWhere(q ?? '') };
+    if (type && type !== 'all') where.type = type;
+    if (year && year !== 'all') where.academicYear = parseInt(year, 10);
+
+    const [notes, yearRows] = await Promise.all([
+      prisma.resource.findMany({
+        where,
+        select: {
+          id: true, title: true, type: true, fileType: true, updatedAt: true,
+          subject: { select: { id: true, name: true } },
+          unit: { select: { number: true, title: true } },
+          uploadedBy: { select: { name: true } },
+          contentText: !!q,
+        },
+        orderBy: sort === 'popular' ? { views: 'desc' } : { createdAt: 'desc' },
+      }),
+      prisma.resource.findMany({
+        where: { academicYear: { not: null } },
+        distinct: ['academicYear'],
+        select: { academicYear: true },
+        orderBy: { academicYear: 'desc' },
+      }),
+    ]);
+    return { notes, years: yearRows.map((r) => r.academicYear!).filter(Boolean) };
+};
+
+const getNotesForParams = (q?: string, type?: string, year?: string, sort?: string) => {
+  return unstable_cache(
+    () => fetchNotesFromDb(q, type, year, sort),
+    ['notes-query', q || '', type || '', year || '', sort || ''],
+    { revalidate: 60 }
+  )();
+};
+
 
 export default async function NotesPage({
   searchParams,
@@ -16,38 +51,11 @@ export default async function NotesPage({
 }) {
   const { q, type, year, sort } = searchParams;
 
-  const where: Prisma.ResourceWhereInput = { status: 'APPROVED', ...searchWhere(q ?? '') };
-  if (type && type !== 'all') where.type = type;
-  if (year && year !== 'all') where.academicYear = parseInt(year, 10);
-
-  const [notes, bookmarkedIds, yearRows] = await Promise.all([
-    prisma.resource.findMany({
-      where,
-      // Explicit select rather than `include`: contentText holds up to 20KB of
-      // OCR'd text per row, so it is only worth shipping when we actually need
-      // it to build a match snippet.
-      select: {
-        id: true,
-        title: true,
-        type: true,
-        fileType: true,
-        updatedAt: true,
-        subject: { select: { id: true, name: true } },
-        unit: { select: { number: true, title: true } },
-        uploadedBy: { select: { name: true } },
-        contentText: !!q,
-      },
-      orderBy: sort === 'popular' ? { views: 'desc' } : { createdAt: 'desc' },
-    }),
-    getBookmarkedIds(),
-    prisma.resource.findMany({
-      where: { academicYear: { not: null } },
-      distinct: ['academicYear'],
-      select: { academicYear: true },
-      orderBy: { academicYear: 'desc' },
-    }),
+  const [cached, bookmarkedIds] = await Promise.all([
+    getNotesForParams(q, type, year, sort),
+    getBookmarkedIds()
   ]);
-  const years = yearRows.map((r) => r.academicYear!).filter(Boolean);
+  const { notes, years } = cached;
 
   // Where the match came from inside the document, so a hit on a file called
   // "camscanner-1905084940.pdf" still shows why it matched.

@@ -24,7 +24,7 @@ export default function BottomNav() {
       {ITEMS.map(({ href, icon: Icon, label }) => {
         const active = href === '/' ? pathname === '/' : pathname?.startsWith(href);
         return (
-          <Link
+          <Link prefetch={true}
             key={href}
             href={href}
             className={cn(

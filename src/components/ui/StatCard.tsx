@@ -74,7 +74,7 @@ export function StatCard({
 
   if (href) {
     return (
-      <Link href={href} className={shell} aria-label={`${label}: ${value}`}>
+      <Link prefetch={true} href={href} className={shell} aria-label={`${label}: ${value}`}>
         {body}
       </Link>
     );

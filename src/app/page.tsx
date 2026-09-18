@@ -10,7 +10,7 @@ import {
   Building2, Clock, Flame, ArrowRight,
 } from 'lucide-react';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 /**
  * The public dashboard. Notes Hub has no accounts, so there is no personal
@@ -172,6 +172,7 @@ export default async function HomePage() {
               Recently added
             </h2>
             <Link
+  prefetch={true}
               href="/notes"
               className="text-meta font-semibold text-sage-600 transition hover:text-sage-800"
             >
@@ -185,7 +186,7 @@ export default async function HomePage() {
           />
         </div>
 
-        <aside className="relative flex min-w-0 flex-col overflow-hidden rounded-md border border-sage-100 bg-primary-soft p-7 sm:p-9">
+        <aside className="relative flex min-w-0 flex-col overflow-hidden rounded-md border border-border bg-primary-soft p-7 sm:p-9">
           <svg
             viewBox="0 0 200 240"
             aria-hidden
@@ -206,18 +207,19 @@ export default async function HomePage() {
             <path d="M138 16 L138 220" stroke="var(--sage-500)" strokeWidth="2" opacity="0.45" />
           </svg>
 
-          <p className="relative font-heading text-[2.75rem] font-bold leading-[0.7] text-sage-500" aria-hidden>
+          <p className="relative font-heading text-[2.75rem] font-bold leading-[0.7] text-primary" aria-hidden>
             &ldquo;
           </p>
-          <p className="relative mt-5 text-[clamp(1.35rem,2vw,1.9rem)] font-heading font-bold leading-[1.15] tracking-[-0.02em] text-primary-strong">
+          <p className="relative mt-5 text-[clamp(1.35rem,2vw,1.9rem)] font-heading font-bold leading-[1.15] tracking-[-0.02em] text-ink">
             A little progress every day adds up to big results.
           </p>
-          <p className="relative mt-4 max-w-[30ch] text-body leading-relaxed text-sage-700">
+          <p className="relative mt-4 max-w-[30ch] text-body leading-relaxed text-secondary">
             SGSITS NotesVault is built and maintained by students, for students.
           </p>
           <Link
+  prefetch={true}
             href="/about"
-            className="relative mt-7 inline-flex items-center gap-2 self-start rounded-button bg-surface px-4 py-2.5 text-meta font-semibold text-primary-strong shadow-sm transition duration-calm ease-calm hover:shadow-md"
+            className="relative mt-7 inline-flex items-center gap-2 self-start rounded-button bg-surface px-4 py-2.5 text-meta font-semibold text-ink shadow-sm transition duration-calm ease-calm hover:shadow-md"
           >
             About the project
             <ArrowRight size={15} strokeWidth={2.4} />
@@ -232,6 +234,7 @@ export default async function HomePage() {
             Popular subjects
           </h2>
           <Link
+  prefetch={true}
             href="/subjects"
             className="text-meta font-semibold text-sage-600 transition hover:text-sage-800"
           >

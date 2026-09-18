@@ -6,6 +6,19 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config;
   },
+  async headers() {
+    return [
+      {
+        source: "/pdf.worker.min.mjs",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       // Dashboard → root (the new signed-in home)

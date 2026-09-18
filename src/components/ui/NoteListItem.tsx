@@ -89,6 +89,7 @@ export default function NoteListItem({
   if (variant === "table") {
     return (
       <Link
+  prefetch={true}
         href={`/notes/${note.id}`}
         className={cn("flex min-h-[64px] items-center gap-3.5 px-4 py-3", hover, className)}
       >
@@ -120,6 +121,7 @@ export default function NoteListItem({
 
   return (
     <Link
+  prefetch={true}
       href={`/notes/${note.id}`}
       className={cn("flex items-center gap-3.5 rounded-input px-3.5 py-3", hover, className)}
     >

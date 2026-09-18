@@ -90,18 +90,18 @@ export default function ScheduleView({ events, isLoggedIn }: { events: any[]; is
         href={CALENDAR_PDF_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-between gap-3 rounded-md border border-sage-100 bg-primary-soft p-4 shadow-sm transition duration-calm ease-calm hover:border-sage-300"
+        className="flex items-center justify-between gap-3 rounded-md border border-border bg-primary-soft p-4 shadow-sm transition duration-calm ease-calm hover:border-sage-300"
       >
         <div className="flex items-center gap-3">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-input bg-surface text-sage-700 shadow-sm">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-input bg-surface text-ink shadow-sm">
             <FileDown size={17} strokeWidth={1.9} />
           </span>
           <div>
-            <p className="text-body font-semibold text-primary-strong">Official Academic Calendar</p>
-            <p className="text-meta text-sage-700">Semester A (July–Dec 2026) — SGSITS, PDF</p>
+            <p className="text-body font-semibold text-ink">Official Academic Calendar</p>
+            <p className="text-meta text-secondary">Semester A (July–Dec 2026) — SGSITS, PDF</p>
           </div>
         </div>
-        <span className="text-meta font-semibold text-sage-700">Download</span>
+        <span className="text-meta font-semibold text-secondary">Download</span>
       </a>
 
       <div className="flex items-center justify-between rounded-md border border-border bg-surface p-4 shadow-sm">

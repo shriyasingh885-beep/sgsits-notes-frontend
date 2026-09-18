@@ -67,7 +67,7 @@ export function IconLink({
   className?: string;
 }) {
   return (
-    <Link href={href} aria-label={label} title={label} className={shell(tone, size, className)}>
+    <Link prefetch={true} href={href} aria-label={label} title={label} className={shell(tone, size, className)}>
       {icon}
     </Link>
   );

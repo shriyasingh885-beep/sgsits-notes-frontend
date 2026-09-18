@@ -4,7 +4,7 @@ import PageHeader from '@/components/ui/PageHeader';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import Card from '@/components/ui/Card';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function BrowseYearBranchesPage({ params }: { params: { collegeSlug: string, year: string } }) {
   const college = await prisma.college.findUnique({
@@ -38,7 +38,7 @@ export default async function BrowseYearBranchesPage({ params }: { params: { col
         <h2 className="text-card-title font-semibold text-ink">Common Subjects</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {commonSemesters.map(s => (
-            <Link key={s} href={`/browse/${college.slug}/${params.year}/${s}`}>
+            <Link prefetch={true} key={s} href={`/browse/${college.slug}/${params.year}/${s}`}>
               <Card hover className="p-5 flex items-center justify-between">
                 <span className="font-semibold text-ink">Semester {s}</span>
                 <span className="text-sage-600">→</span>
@@ -52,7 +52,7 @@ export default async function BrowseYearBranchesPage({ params }: { params: { col
         <h2 className="text-card-title font-semibold text-ink">Branches</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {branches.map(b => (
-            <Link key={b.id} href={`/browse/${college.slug}/${params.year}/branch/${b.slug}`}>
+            <Link prefetch={true} key={b.id} href={`/browse/${college.slug}/${params.year}/branch/${b.slug}`}>
               <Card hover className="p-5 flex items-center justify-between">
                 <span className="font-semibold text-ink">{b.name}</span>
                 <span className="text-sage-600">→</span>

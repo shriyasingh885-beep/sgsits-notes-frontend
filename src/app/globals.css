@@ -104,6 +104,23 @@
   /* a quiet lift above --surface, not the light mint the light theme uses */
   --row-hover: #21382c;
 
+  /* Accent cream/gold - subdued for dark mode */
+  --accent-cream: #2a261c;
+  --accent-cream-ink: #c2b291;
+
+  /* Desaturated subject tints - darkened for dark mode */
+  --tint-lavender: #262131;
+  --tint-lavender-ink: #afa1cf;
+  --tint-sage: #1e2c24;
+  --tint-sage-ink: #93b9a2;
+  
+  --tint-terracotta: #312117;
+  --tint-terracotta-ink: #d4a78e;
+  --tint-ochre: #2a261c;
+  --tint-ochre-ink: #c2b291;
+  --tint-slate: #242a27;
+  --tint-slate-ink: #9dafb4;
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.4), 0 16px 32px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.45), 0 30px 60px rgba(0, 0, 0, 0.5);

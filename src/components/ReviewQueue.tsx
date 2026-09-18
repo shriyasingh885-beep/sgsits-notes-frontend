@@ -189,7 +189,7 @@ export default function ReviewQueue({
                     )}
                   </div>
 
-                  <Link
+                  <Link prefetch={true}
                     href={`/notes/${item.id}`}
                     className="inline-flex shrink-0 items-center gap-1.5 rounded-button border border-border px-3 py-2 text-meta font-semibold text-secondary transition hover:border-sage-300 hover:text-ink"
                   >

@@ -113,7 +113,7 @@ export default function AdminPanel({
           {pending.map((r) => (
             <div key={r.id} className="rounded-card border border-border bg-surface p-4 shadow-card flex items-center justify-between gap-4">
               <div className="min-w-0">
-                <Link href={`/notes/${r.id}`} className="font-semibold text-body-lg text-ink hover:underline">
+                <Link prefetch={true} href={`/notes/${r.id}`} className="font-semibold text-body-lg text-ink hover:underline">
                   {r.title}
                 </Link>
                 <p className="text-meta text-muted mt-0.5">
@@ -135,7 +135,7 @@ export default function AdminPanel({
           {reports.map((r) => (
             <div key={r.id} className="rounded-card border border-border bg-surface p-4 shadow-card flex items-center justify-between gap-4">
               <div className="min-w-0">
-                <Link href={`/notes/${r.resource.id}`} className="font-semibold text-body-lg text-ink hover:underline">
+                <Link prefetch={true} href={`/notes/${r.resource.id}`} className="font-semibold text-body-lg text-ink hover:underline">
                   {r.resource.title}
                 </Link>
                 <p className="text-meta text-muted mt-0.5">

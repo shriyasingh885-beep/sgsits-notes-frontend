@@ -23,6 +23,7 @@ export function QuickAction({
   const solid = emphasis === 'solid';
   return (
     <Link
+  prefetch={true}
       href={href}
       className={cn(
         'group flex items-center gap-3.5 rounded-md border px-4 py-3.5 shadow-sm',

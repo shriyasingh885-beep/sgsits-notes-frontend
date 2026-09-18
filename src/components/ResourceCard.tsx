@@ -24,7 +24,7 @@ export default function ResourceCard({ resource }: { resource: ResourceCardData 
       : null;
 
   return (
-    <Link href={`/notes/${resource.id}`}>
+    <Link prefetch={true} href={`/notes/${resource.id}`}>
       <Card hover className="p-4 h-full flex flex-col gap-2">
         <div className="flex items-start justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0">

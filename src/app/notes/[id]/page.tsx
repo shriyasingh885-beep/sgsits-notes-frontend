@@ -8,7 +8,6 @@ import { auth } from '@/lib/auth';
 import ReaderOverlay from '@/components/reader/ReaderOverlay';
 import { readerKindFor } from '@/components/reader/reader-kind';
 
-export const dynamic = 'force-dynamic';
 
 export default async function NotePage({ params }: { params: { id: string } }) {
   const session = await auth();

@@ -81,14 +81,15 @@ export async function POST(req: NextRequest) {
         const now = new Date();
         const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-        const [activeUsers, visitorsToday, totalUploads, uploadsToday] = await Promise.all([
+        const [activeUsers, visitorsToday, approvedPdfs, totalUploads] = await Promise.all([
           prisma.presence.count({ where: { lastSeen: { gte: new Date(Date.now() - 5 * 60 * 1000) } } }),
           prisma.presence.count({ where: { lastSeen: { gte: startOfDay } } }),
-          prisma.resource.count(),
-          prisma.resource.count({ where: { createdAt: { gte: startOfDay } } })
+          prisma.resource.count({ where: { status: "APPROVED" } }),
+          prisma.resource.count()
         ]);
 
-        const aggr = await prisma.resource.aggregate({ _sum: { downloads: true } });
+        const aggr = await prisma.resource.aggregate({ _sum: { views: true, downloads: true } });
+        const totalViews = aggr._sum.views || 0;
         const totalDownloads = aggr._sum.downloads || 0;
 
         const statsText = `📊 *Live Website Analytics*
@@ -96,10 +97,13 @@ export async function POST(req: NextRequest) {
 🟢 *Active Users Now:* ${activeUsers}
 📅 *Visitors Today:* ${visitorsToday}
 
-📚 *Total Uploads:* ${totalUploads} (↑ ${uploadsToday} today)
-⬇️ *Total Downloads:* ${totalDownloads.toLocaleString()}
+📚 *Total PDFs (Live):* ${approvedPdfs}
+📤 *Total Uploads (All):* ${totalUploads}
 
-_(Note: The database keeps a running total of downloads rather than a daily log, so downloads are shown as All-Time)._`;
+👀 *Total Website Views (All-Time):* ${totalViews.toLocaleString()}
+⬇️ *Total Downloads (All-Time):* ${totalDownloads.toLocaleString()}
+
+_(Note: The database is currently designed to keep running totals to save space. To calculate daily views or peak simultaneous users, we would need to upgrade the database schema to record a timestamp for every single view event)._`;
 
         await sendTelegramMessage(chatId, statsText);
         return NextResponse.json({ success: true });

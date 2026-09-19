@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { saveUploadedFile, UploadValidationError, hashFile } from "@/lib/upload";
+import { sendApprovalMessage } from "@/lib/telegram";
 
 // SGSITS NotesVault has no accounts for browsing or uploading — this is the
 // system account real anonymous submissions attach to (the FK still needs a
@@ -98,12 +99,15 @@ export async function POST(req: NextRequest) {
       tags,
       type,
       academicYear,
-      status: "APPROVED",
+      status: "PENDING",
       subjectId,
       unitId,
       uploadedById,
     },
   });
+
+  // Trigger Telegram notification
+  await sendApprovalMessage(resource, subject.name, uploaderName);
 
   return NextResponse.json({ id: resource.id, status: resource.status });
 }

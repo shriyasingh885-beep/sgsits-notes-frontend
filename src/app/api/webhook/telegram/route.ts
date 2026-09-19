@@ -78,31 +78,28 @@ export async function POST(req: NextRequest) {
 
       // Handle /stats Command
       if (body.message.text === "/stats" || body.message.text === "/analytics") {
-        const [totalUsers, totalResources, pendingResources, openReports, onlineUsers] = await Promise.all([
-          prisma.user.count(),
-          prisma.resource.count({ where: { status: "APPROVED" } }),
-          prisma.resource.count({ where: { status: "PENDING" } }),
-          prisma.report.count({ where: { status: "OPEN" } }),
-          prisma.presence.count({ where: { lastSeen: { gte: new Date(Date.now() - 5 * 60 * 1000) } } })
+        const now = new Date();
+        const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+        const [activeUsers, visitorsToday, totalUploads, uploadsToday] = await Promise.all([
+          prisma.presence.count({ where: { lastSeen: { gte: new Date(Date.now() - 5 * 60 * 1000) } } }),
+          prisma.presence.count({ where: { lastSeen: { gte: startOfDay } } }),
+          prisma.resource.count(),
+          prisma.resource.count({ where: { createdAt: { gte: startOfDay } } })
         ]);
 
-        const aggr = await prisma.resource.aggregate({ _sum: { views: true, downloads: true } });
-        const totalViews = aggr._sum.views || 0;
+        const aggr = await prisma.resource.aggregate({ _sum: { downloads: true } });
         const totalDownloads = aggr._sum.downloads || 0;
 
         const statsText = `📊 *Live Website Analytics*
       
-🟢 *Active Now:* ${onlineUsers} users online
-👥 *Total Registered Users:* ${totalUsers}
+🟢 *Active Users Now:* ${activeUsers}
+📅 *Visitors Today:* ${visitorsToday}
 
-📚 *Content Stats:*
-• Approved PDFs: ${totalResources}
-• Total Views: ${totalViews.toLocaleString()} 👀
-• Total Downloads: ${totalDownloads.toLocaleString()} ⬇️
+📚 *Total Uploads:* ${totalUploads} (↑ ${uploadsToday} today)
+⬇️ *Total Downloads:* ${totalDownloads.toLocaleString()}
 
-⚠️ *Pending Action:*
-• Awaiting Approval: ${pendingResources}
-• Open Reports: ${openReports}`;
+_(Note: The database keeps a running total of downloads rather than a daily log, so downloads are shown as All-Time)._`;
 
         await sendTelegramMessage(chatId, statsText);
         return NextResponse.json({ success: true });

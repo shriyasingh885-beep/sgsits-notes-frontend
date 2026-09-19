@@ -73,6 +73,27 @@ export async function saveUploadedFile(file: File, category: string) {
   };
 }
 
+export async function saveBufferToR2(buffer: Buffer, category: string, ext: string = ".pdf") {
+  if (!R2_ACCESS_KEY_ID || !R2_SECRET_ACCESS_KEY) {
+    throw new UploadValidationError("Storage service is not configured.");
+  }
+  const key = `${category}/${randomUUID()}${ext}`;
+  const client = getS3Client();
+  await client.send(
+    new PutObjectCommand({
+      Bucket: R2_BUCKET,
+      Key: key,
+      Body: buffer,
+      ContentType: "application/pdf",
+    })
+  );
+  return {
+    fileUrl: `${R2_PUBLIC_URL}/${key}`,
+    fileType: "PDF",
+    fileSize: buffer.length,
+  };
+}
+
 /** Delete a resource's underlying file from Cloudflare R2. */
 export async function deleteUploadedFile(fileUrl: string) {
   if (!R2_ACCESS_KEY_ID || !fileUrl.startsWith(R2_PUBLIC_URL)) return;

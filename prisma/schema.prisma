@@ -274,3 +274,15 @@ model Presence {
 
   @@index([lastSeen])
 }
+
+model TelegramDraft {
+  id        String   @id @default(cuid())
+  fileId    String
+  fileName  String
+  fileSize  Int
+  step      String
+  subjectId String?
+  type      String?
+  year      Int?
+  createdAt DateTime @default(now())
+}

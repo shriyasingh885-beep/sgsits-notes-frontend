@@ -184,7 +184,6 @@ export async function POST(req: NextRequest) {
       if (data.startsWith("typ_")) {
         const [, draftId, typeCode, extra] = data.split("_");
         const fullType = extra ? `${typeCode}_${extra}` : typeCode; 
-        const dbType = fullType.startsWith("PYQ") ? "PYQ" : fullType;
         
         await prisma.telegramDraft.update({ where: { id: draftId }, data: { type: fullType, step: "AWAITING_YEAR" } });
 
@@ -229,7 +228,7 @@ async function handleFinalUpload(draftId: string, chatId: number, messageId: num
 
   // 1. Get file path from Telegram
   let res = await fetch(`https://api.telegram.org/bot${token}/getFile?file_id=${draft.fileId}`);
-  let json = await res.json();
+  const json = await res.json();
   if (!json.ok) throw new Error("Failed to get file from Telegram");
 
   // 2. Download file buffer

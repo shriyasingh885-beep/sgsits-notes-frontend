@@ -98,7 +98,14 @@ export async function POST(req: NextRequest) {
         await sendTelegramMessage(chatId, `Found ${results.length} results. Click one to delete:`, { inline_keyboard: inlineKeyboard });
         return NextResponse.json({ success: true });
       }
+
+      // Fallback for unhandled messages
+      if (body.message.text || body.message.photo || body.message.video) {
+        await sendTelegramMessage(chatId, "I only understand PDF documents and the `/delete` command. Please send a PDF file as a Document!");
+        return NextResponse.json({ success: true });
+      }
     }
+
 
     // 2. Handle Callback Queries
     if (body.callback_query) {

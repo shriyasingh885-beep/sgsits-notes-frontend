@@ -81,7 +81,7 @@ export default function UploadForm({ subjects }: { subjects: any[] }) {
         setError(data?.error || 'Upload failed — please try again.');
         return;
       }
-      toast('Uploaded — live on the site now', 'success');
+      toast('Uploaded — sent for approval', 'success');
       setFile(null);
       setSubjectId('');
       setUnitNumber('');

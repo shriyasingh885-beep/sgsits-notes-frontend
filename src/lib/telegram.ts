@@ -14,8 +14,6 @@ export async function sendApprovalMessage(resource: any, subjectName: string, up
 *Type:* ${resource.type}
 *Uploader:* ${uploaderName || "Anonymous"}
 *Description:* ${resource.description || "N/A"}
-
-[View PDF](${resource.fileUrl})
 `;
 
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
@@ -26,6 +24,7 @@ export async function sendApprovalMessage(resource: any, subjectName: string, up
     parse_mode: "Markdown",
     reply_markup: {
       inline_keyboard: [
+        [{ text: "📄 View PDF", url: resource.fileUrl }],
         [
           { text: "✅ Approve", callback_data: `approve_${resource.id}` },
           { text: "❌ Reject", callback_data: `reject_${resource.id}` }
